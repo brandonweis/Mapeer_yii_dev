@@ -1,0 +1,133 @@
+2011/12/20 08:30:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'testdrive'' in F:\brandontechsailor\yii_demo\project1\framework\db\CDbConnection.php:364
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\framework\db\CDbConnection.php(313): CDbConnection->open()
+#1 F:\brandontechsailor\yii_demo\project1\framework\db\CDbConnection.php(291): CDbConnection->setActive(true)
+#2 F:\brandontechsailor\yii_demo\project1\framework\base\CModule.php(372): CDbConnection->init()
+#3 F:\brandontechsailor\yii_demo\project1\framework\base\CModule.php(86): CModule->getComponent('db')
+#4 F:\brandontechsailor\yii_demo\project1\framework\gii\generators\model\ModelCode.php(54): CModule->__get('db')
+#5 F:\brandontechsailor\yii_demo\project1\framework\web\CFormModel.php(40): ModelCode->init()
+#6 F:\brandontechsailor\yii_demo\project1\framework\gii\CCodeGenerator.php(149): CFormModel->__construct()
+#7 F:\brandontechsailor\yii_demo\project1\framework\gii\CCodeGenerator.php(61): CCodeGenerator->prepare()
+#8 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#10 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#11 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('')
+#13 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('gii/model')
+#14 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#15 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(13): CApplication->run()
+#16 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=gii/model
+2011/12/20 08:31:20 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'testdrive'' in F:\brandontechsailor\yii_demo\project1\framework\db\CDbConnection.php:364
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\framework\db\CDbConnection.php(313): CDbConnection->open()
+#1 F:\brandontechsailor\yii_demo\project1\framework\db\CDbConnection.php(291): CDbConnection->setActive(true)
+#2 F:\brandontechsailor\yii_demo\project1\framework\base\CModule.php(372): CDbConnection->init()
+#3 F:\brandontechsailor\yii_demo\project1\framework\base\CModule.php(86): CModule->getComponent('db')
+#4 F:\brandontechsailor\yii_demo\project1\framework\gii\generators\model\ModelCode.php(54): CModule->__get('db')
+#5 F:\brandontechsailor\yii_demo\project1\framework\web\CFormModel.php(40): ModelCode->init()
+#6 F:\brandontechsailor\yii_demo\project1\framework\gii\CCodeGenerator.php(149): CFormModel->__construct()
+#7 F:\brandontechsailor\yii_demo\project1\framework\gii\CCodeGenerator.php(61): CCodeGenerator->prepare()
+#8 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#10 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#11 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('')
+#13 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('gii/model')
+#14 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#15 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(13): CApplication->run()
+#16 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=gii/model
+2011/12/20 08:31:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'testdrive'' in F:\brandontechsailor\yii_demo\project1\framework\db\CDbConnection.php:364
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\framework\db\CDbConnection.php(313): CDbConnection->open()
+#1 F:\brandontechsailor\yii_demo\project1\framework\db\CDbConnection.php(291): CDbConnection->setActive(true)
+#2 F:\brandontechsailor\yii_demo\project1\framework\base\CModule.php(372): CDbConnection->init()
+#3 F:\brandontechsailor\yii_demo\project1\framework\base\CModule.php(86): CModule->getComponent('db')
+#4 F:\brandontechsailor\yii_demo\project1\framework\gii\generators\model\ModelCode.php(54): CModule->__get('db')
+#5 F:\brandontechsailor\yii_demo\project1\framework\web\CFormModel.php(40): ModelCode->init()
+#6 F:\brandontechsailor\yii_demo\project1\framework\gii\CCodeGenerator.php(149): CFormModel->__construct()
+#7 F:\brandontechsailor\yii_demo\project1\framework\gii\CCodeGenerator.php(61): CCodeGenerator->prepare()
+#8 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): CCodeGenerator->actionIndex()
+#9 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#10 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#11 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('')
+#13 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('gii/model')
+#14 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#15 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(13): CApplication->run()
+#16 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=gii/model
+2011/12/20 08:34:52 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'testdrive.tbl_user' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `tbl_user`.
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php (13)
+2011/12/20 08:40:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php:281
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('user')
+#1 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=user
+2011/12/20 08:40:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php:281
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('user')
+#1 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=user
+2011/12/20 08:41:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "USer".' in F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php:281
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('USer')
+#1 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=USer
+2011/12/20 08:41:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "User".' in F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php:281
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('User')
+#1 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=User
+2011/12/20 08:42:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/admin".' in F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php:281
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('user/admin')
+#1 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=user/admin
+2011/12/20 08:44:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php:281
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('user')
+#1 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=user
+2011/12/21 00:32:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'localhost' (10061)' in F:\brandontechsailor\yii_demo\project1\framework\db\CDbConnection.php:364
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\framework\db\CDbConnection.php(313): CDbConnection->open()
+#1 F:\brandontechsailor\yii_demo\project1\framework\db\CDbConnection.php(291): CDbConnection->setActive(true)
+#2 F:\brandontechsailor\yii_demo\project1\framework\base\CModule.php(372): CDbConnection->init()
+#3 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(429): CModule->getComponent('db')
+#4 F:\brandontechsailor\yii_demo\project1\framework\db\ar\CActiveRecord.php(609): CApplication->getDb()
+#5 F:\brandontechsailor\yii_demo\project1\framework\db\ar\CActiveRecord.php(2275): CActiveRecord->getDbConnection()
+#6 F:\brandontechsailor\yii_demo\project1\framework\db\ar\CActiveRecord.php(372): CActiveRecordMetaData->__construct(Object(User))
+#7 F:\brandontechsailor\yii_demo\project1\framework\web\CActiveDataProvider.php(72): CActiveRecord::model('User')
+#8 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\controllers\UserController.php(130): CActiveDataProvider->__construct('User')
+#9 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): UserController->actionIndex()
+#10 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#11 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#14 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(283): CFilterChain->run()
+#17 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('index')
+#19 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('user/index')
+#20 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#21 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(13): CApplication->run()
+#22 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=user/index
+2012/02/17 08:14:11 [error] [exception.CException] exception 'CException' with message 'Property "SiteController.facebook" is not defined.' in F:\brandontechsailor\yii_demo\project1\framework\base\CComponent.php:174
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\controllers\SiteController.php(108): CComponent->__set('facebook', Object(Facebook))
+#1 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\controllers\SiteController.php(33): SiteController->facebookConnect()
+#2 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): SiteController->actionIndex()
+#3 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('index')
+#7 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('site/index')
+#8 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=site/index
