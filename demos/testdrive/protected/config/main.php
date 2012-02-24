@@ -28,6 +28,40 @@ return array(
 		 	// If removed, Gii defaults to localhost only. Edit carefully to taste.
 			'ipFilters'=>array('127.0.0.1','::1'),
 		),
+		// Yii User Management - Possible Config
+		/* 'user' => array(
+			'debug' => false,
+			'usersTable' => 'user',
+			'translationTable' => 'translation',
+		),
+		'usergroup' => array(
+			'usergroupTable' => 'user_group',
+			'usergroupMessagesTable' => 'user_group_message',
+		),
+		'membership' => array(
+			'membershipTable' => 'membership',
+			'paymentTable' => 'payment',
+		),
+		'friendship' => array(
+			'friendshipTable' => 'friendship',
+		),
+		'profile' => array(
+			'privacySettingTable' => 'privacy_setting',
+			'profileFieldsGroupTable' => 'profile_field_group',
+			'profileFieldsTable' => 'profile_field',
+			'profileTable' => 'profile',
+			'profileCommentTable' => 'profile_comment',
+			'profileVisitTable' => 'profile_visit',
+		),
+		'role' => array(
+			'rolesTable' => 'role',
+			'userHasRoleTable' => 'user_role',
+			'actionTable' => 'action',
+			'permissionTable' => 'permission',
+		),
+		'messages' => array(
+			'messagesTable' => 'message',
+		), */
 		
 	),
 
@@ -35,7 +69,10 @@ return array(
 	'components'=>array(
 		'user'=>array(
 			// enable cookie-based authentication
-			'allowAutoLogin'=>true,
+			'allowAutoLogin'=>true, // overwrite default usser module
+			// 'class' => 'application.modules.user.components.YumWebUser',
+			// 'allowAutoLogin'=>true,
+			// 'loginUrl' => array('//user/user/login'),
 		),
 		'kint' => array(
 			'class' => 'ext.Kint.Kint',
@@ -62,6 +99,7 @@ return array(
 			'username' => 'root',
 			'password' => '',
 			'charset' => 'utf8',
+			'tablePrefix' => '',
 		),
 		
 		'errorHandler'=>array(

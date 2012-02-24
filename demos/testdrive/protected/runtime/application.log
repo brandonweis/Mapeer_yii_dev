@@ -131,3 +131,543 @@ Stack trace:
 #8 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
 #9 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(13): CApplication->run()
 #10 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=site/index
+2012/02/21 03:56:45 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;.
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php (132)
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php (13)
+2012/02/21 03:56:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;' in F:\brandontechsailor\yii_demo\project1\framework\db\CDbCommand.php:336
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php(132): CDbCommand->execute()
+#1 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): YumInstallController->actionInstall()
+#2 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#6 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(283): CFilterChain->run()
+#9 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('install')
+#11 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('user/install/in...')
+#12 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(13): CApplication->run()
+#14 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=user/install/install
+2012/02/21 03:57:39 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;.
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php (132)
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php (13)
+2012/02/21 03:57:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;' in F:\brandontechsailor\yii_demo\project1\framework\db\CDbCommand.php:336
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php(132): CDbCommand->execute()
+#1 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): YumInstallController->actionInstall()
+#2 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#6 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(283): CFilterChain->run()
+#9 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('install')
+#11 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('user/install/in...')
+#12 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(13): CApplication->run()
+#14 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=user/install/install
+2012/02/21 03:59:03 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;.
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php (132)
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php (13)
+2012/02/21 03:59:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;' in F:\brandontechsailor\yii_demo\project1\framework\db\CDbCommand.php:336
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php(132): CDbCommand->execute()
+#1 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): YumInstallController->actionInstall()
+#2 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#6 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(283): CFilterChain->run()
+#9 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('install')
+#11 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('user/install/in...')
+#12 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(13): CApplication->run()
+#14 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=user/install/install
+2012/02/21 04:00:25 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;.
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php (132)
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php (13)
+2012/02/21 04:00:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;' in F:\brandontechsailor\yii_demo\project1\framework\db\CDbCommand.php:336
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php(132): CDbCommand->execute()
+#1 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): YumInstallController->actionInstall()
+#2 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#6 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(283): CFilterChain->run()
+#9 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('install')
+#11 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('user/install/in...')
+#12 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(13): CApplication->run()
+#14 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=user/install/install
+2012/02/21 04:00:58 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;.
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php (132)
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php (13)
+2012/02/21 04:00:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;' in F:\brandontechsailor\yii_demo\project1\framework\db\CDbCommand.php:336
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php(132): CDbCommand->execute()
+#1 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): YumInstallController->actionInstall()
+#2 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#6 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(283): CFilterChain->run()
+#9 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('install')
+#11 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('user/install/in...')
+#12 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(13): CApplication->run()
+#14 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=user/install/install
+2012/02/21 04:20:48 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;.
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php (132)
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php (13)
+2012/02/21 04:20:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;' in F:\brandontechsailor\yii_demo\project1\framework\db\CDbCommand.php:336
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php(132): CDbCommand->execute()
+#1 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): YumInstallController->actionInstall()
+#2 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#6 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(283): CFilterChain->run()
+#9 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('install')
+#11 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('user/install/in...')
+#12 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(13): CApplication->run()
+#14 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=user/install/install
+2012/02/21 04:25:45 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;.
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php (132)
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php (13)
+2012/02/21 04:25:45 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;' in F:\brandontechsailor\yii_demo\project1\framework\db\CDbCommand.php:336
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php(132): CDbCommand->execute()
+#1 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): YumInstallController->actionInstall()
+#2 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#6 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(283): CFilterChain->run()
+#9 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('install')
+#11 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('user/install/in...')
+#12 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(13): CApplication->run()
+#14 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=user/install/install
+2012/02/21 04:36:24 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;.
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php (132)
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php (15)
+2012/02/21 04:36:24 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;' in F:\brandontechsailor\yii_demo\project1\framework\db\CDbCommand.php:336
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php(132): CDbCommand->execute()
+#1 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): YumInstallController->actionInstall()
+#2 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#6 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(283): CFilterChain->run()
+#9 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('install')
+#11 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('user/install/in...')
+#12 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(15): CApplication->run()
+#14 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=user/install/install
+2012/02/21 04:36:37 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;.
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php (132)
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php (15)
+2012/02/21 04:36:37 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;' in F:\brandontechsailor\yii_demo\project1\framework\db\CDbCommand.php:336
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php(132): CDbCommand->execute()
+#1 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): YumInstallController->actionInstall()
+#2 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#6 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(283): CFilterChain->run()
+#9 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('install')
+#11 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('user/install/in...')
+#12 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(15): CApplication->run()
+#14 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=user/install/install
+2012/02/21 04:36:57 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;.
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php (132)
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php (15)
+2012/02/21 04:36:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;' in F:\brandontechsailor\yii_demo\project1\framework\db\CDbCommand.php:336
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php(132): CDbCommand->execute()
+#1 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): YumInstallController->actionInstall()
+#2 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#6 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(283): CFilterChain->run()
+#9 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('install')
+#11 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('user/install/in...')
+#12 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(15): CApplication->run()
+#14 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=user/install/install
+2012/02/21 07:52:36 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;.
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php (132)
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php (15)
+2012/02/21 07:52:36 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;' in F:\brandontechsailor\yii_demo\project1\framework\db\CDbCommand.php:336
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php(132): CDbCommand->execute()
+#1 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): YumInstallController->actionInstall()
+#2 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#6 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(283): CFilterChain->run()
+#9 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('install')
+#11 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('user/install/in...')
+#12 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(15): CApplication->run()
+#14 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=user/install/install
+2012/02/21 07:57:01 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;.
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php (132)
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php (15)
+2012/02/21 07:57:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY000]: General error: 2014 Cannot execute queries while other unbuffered queries are active.  Consider using PDOStatement::fetchAll().  Alternatively, if your code is only ever going to run against mysql, you may enable query buffering by setting the PDO::MYSQL_ATTR_USE_BUFFERED_QUERY attribute.. The SQL statement executed was: CREATE TABLE IF NOT EXISTS `user_group` (
+							`id` int(11) NOT NULL AUTO_INCREMENT,
+							`owner_id` int(11) NOT NULL,
+							`participants` text NULL,
+							`title` varchar(255) NOT NULL,
+							`description` text NOT NULL,
+							PRIMARY KEY (`id`)
+								) ENGINE=InnoDB DEFAULT CHARSET=utf8;' in F:\brandontechsailor\yii_demo\project1\framework\db\CDbCommand.php:336
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumInstallController.php(132): CDbCommand->execute()
+#1 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): YumInstallController->actionInstall()
+#2 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#6 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 F:\brandontechsailor\yii_demo\project1\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(283): CFilterChain->run()
+#9 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('install')
+#11 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('user/install/in...')
+#12 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(15): CApplication->run()
+#14 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=user/install/install
+2012/02/21 08:15:20 [warning] [application] Failed to set unsafe attribute "YumRole" of "YumUser".
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumUserController.php (234)
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php (15)
+2012/02/21 08:15:40 [warning] [application] Failed to set unsafe attribute "YumRole" of "YumUser".
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumUserController.php (234)
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php (15)
+2012/02/21 08:16:08 [warning] [application] Failed to set unsafe attribute "YumRole" of "YumUser".
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumUserController.php (234)
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php (15)
+2012/02/21 08:21:48 [warning] [application] Failed to set unsafe attribute "YumRole" of "YumUser".
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumUserController.php (182)
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php (15)
+2012/02/21 08:22:05 [warning] [application] Failed to set unsafe attribute "YumRole" of "YumUser".
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\modules\user\controllers\YumUserController.php (182)
+in F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php (15)
+2012/02/22 08:39:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'localhost' (10061)' in F:\brandontechsailor\yii_demo\project1\framework\db\CDbConnection.php:364
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\framework\db\CDbConnection.php(313): CDbConnection->open()
+#1 F:\brandontechsailor\yii_demo\project1\framework\db\CDbConnection.php(291): CDbConnection->setActive(true)
+#2 F:\brandontechsailor\yii_demo\project1\framework\base\CModule.php(372): CDbConnection->init()
+#3 F:\brandontechsailor\yii_demo\project1\framework\base\CModule.php(86): CModule->getComponent('db')
+#4 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(14): CModule->__get('db')
+#5 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=user
+2012/02/22 09:00:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin".' in F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php:281
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('admin')
+#1 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(15): CApplication->run()
+#3 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=admin
+2012/02/23 07:43:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2003] Can't connect to MySQL server on 'localhost' (10061)' in F:\brandontechsailor\yii_demo\project1\framework\db\CDbConnection.php:364
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\framework\db\CDbConnection.php(313): CDbConnection->open()
+#1 F:\brandontechsailor\yii_demo\project1\framework\db\CDbConnection.php(291): CDbConnection->setActive(true)
+#2 F:\brandontechsailor\yii_demo\project1\framework\base\CModule.php(372): CDbConnection->init()
+#3 F:\brandontechsailor\yii_demo\project1\framework\base\CModule.php(86): CModule->getComponent('db')
+#4 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(14): CModule->__get('db')
+#5 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php
+2012/02/23 07:59:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "register".' in F:\brandontechsailor\yii_demo\project1\framework\web\CController.php:477
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(262): CController->missingAction('register')
+#1 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('register')
+#2 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('site/register')
+#3 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(15): CApplication->run()
+#5 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=site/register
+2012/02/23 09:03:04 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.password_confirm" is not defined.' in F:\brandontechsailor\yii_demo\project1\framework\base\CComponent.php:131
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\framework\web\helpers\CHtml.php(2063): CComponent->__get('password_confir...')
+#1 F:\brandontechsailor\yii_demo\project1\framework\web\helpers\CHtml.php(1791): CHtml::resolveValue(Object(LoginForm), 'password_confir...')
+#2 F:\brandontechsailor\yii_demo\project1\framework\web\helpers\CHtml.php(1232): CHtml::activeInputField('password', Object(LoginForm), 'password_confir...', Array)
+#3 F:\brandontechsailor\yii_demo\project1\framework\web\widgets\CActiveForm.php(598): CHtml::activePasswordField(Object(LoginForm), 'password_confir...', Array)
+#4 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\views\site\register.php(37): CActiveForm->passwordField(Object(LoginForm), 'password_confir...')
+#5 F:\brandontechsailor\yii_demo\project1\framework\web\CBaseController.php(119): require('F:\brandontechs...')
+#6 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(47): CBaseController->renderInternal('F:\brandontechs...', Array, true)
+#7 F:\brandontechsailor\yii_demo\project1\framework\web\CBaseController.php(86): YiiDebugViewRenderer->renderFile(Object(SiteController), 'F:\brandontechs...', Array, true)
+#8 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(866): CBaseController->renderFile('F:\brandontechs...', Array, true)
+#9 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(779): CController->renderPartial('register', Array, true)
+#10 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\controllers\SiteController.php(120): CController->render('register', Array)
+#11 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): SiteController->actionRegister()
+#12 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#13 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#14 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('register')
+#16 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('site/register')
+#17 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#18 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(15): CApplication->run()
+#19 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=site/register
+2012/02/24 02:41:43 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.password_confirm" is not defined.' in F:\brandontechsailor\yii_demo\project1\framework\base\CComponent.php:131
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\framework\web\helpers\CHtml.php(2063): CComponent->__get('password_confir...')
+#1 F:\brandontechsailor\yii_demo\project1\framework\web\helpers\CHtml.php(1791): CHtml::resolveValue(Object(LoginForm), 'password_confir...')
+#2 F:\brandontechsailor\yii_demo\project1\framework\web\helpers\CHtml.php(1232): CHtml::activeInputField('password', Object(LoginForm), 'password_confir...', Array)
+#3 F:\brandontechsailor\yii_demo\project1\framework\web\widgets\CActiveForm.php(598): CHtml::activePasswordField(Object(LoginForm), 'password_confir...', Array)
+#4 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\views\site\register.php(37): CActiveForm->passwordField(Object(LoginForm), 'password_confir...')
+#5 F:\brandontechsailor\yii_demo\project1\framework\web\CBaseController.php(119): require('F:\brandontechs...')
+#6 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(47): CBaseController->renderInternal('F:\brandontechs...', Array, true)
+#7 F:\brandontechsailor\yii_demo\project1\framework\web\CBaseController.php(86): YiiDebugViewRenderer->renderFile(Object(SiteController), 'F:\brandontechs...', Array, true)
+#8 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(866): CBaseController->renderFile('F:\brandontechs...', Array, true)
+#9 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(779): CController->renderPartial('register', Array, true)
+#10 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\controllers\SiteController.php(120): CController->render('register', Array)
+#11 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): SiteController->actionRegister()
+#12 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#13 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#14 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('register')
+#16 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('site/register')
+#17 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#18 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(15): CApplication->run()
+#19 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=site/register
+2012/02/24 03:11:05 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.password_confirm" is not defined.' in F:\brandontechsailor\yii_demo\project1\framework\base\CComponent.php:131
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\framework\web\helpers\CHtml.php(2063): CComponent->__get('password_confir...')
+#1 F:\brandontechsailor\yii_demo\project1\framework\web\helpers\CHtml.php(1791): CHtml::resolveValue(Object(LoginForm), 'password_confir...')
+#2 F:\brandontechsailor\yii_demo\project1\framework\web\helpers\CHtml.php(1232): CHtml::activeInputField('password', Object(LoginForm), 'password_confir...', Array)
+#3 F:\brandontechsailor\yii_demo\project1\framework\web\widgets\CActiveForm.php(598): CHtml::activePasswordField(Object(LoginForm), 'password_confir...', Array)
+#4 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\views\site\register.php(37): CActiveForm->passwordField(Object(LoginForm), 'password_confir...')
+#5 F:\brandontechsailor\yii_demo\project1\framework\web\CBaseController.php(119): require('F:\brandontechs...')
+#6 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(47): CBaseController->renderInternal('F:\brandontechs...', Array, true)
+#7 F:\brandontechsailor\yii_demo\project1\framework\web\CBaseController.php(86): YiiDebugViewRenderer->renderFile(Object(SiteController), 'F:\brandontechs...', Array, true)
+#8 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(866): CBaseController->renderFile('F:\brandontechs...', Array, true)
+#9 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(779): CController->renderPartial('register', Array, true)
+#10 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\controllers\SiteController.php(120): CController->render('register', Array)
+#11 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): SiteController->actionRegister()
+#12 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#13 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#14 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('register')
+#16 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('site/register')
+#17 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#18 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(15): CApplication->run()
+#19 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=site/register
+2012/02/24 04:56:18 [error] [exception.CException] exception 'CException' with message 'Property "LoginForm.rememberMmme" is not defined.' in F:\brandontechsailor\yii_demo\project1\framework\base\CComponent.php:131
+Stack trace:
+#0 F:\brandontechsailor\yii_demo\project1\framework\web\helpers\CHtml.php(2063): CComponent->__get('rememberMmme')
+#1 F:\brandontechsailor\yii_demo\project1\framework\web\helpers\CHtml.php(1341): CHtml::resolveValue(Object(LoginForm), 'rememberMmme')
+#2 F:\brandontechsailor\yii_demo\project1\framework\web\widgets\CActiveForm.php(658): CHtml::activeCheckBox(Object(LoginForm), 'rememberMmme', Array)
+#3 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\views\site\login.php(39): CActiveForm->checkBox(Object(LoginForm), 'rememberMmme')
+#4 F:\brandontechsailor\yii_demo\project1\framework\web\CBaseController.php(119): require('F:\brandontechs...')
+#5 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(47): CBaseController->renderInternal('F:\brandontechs...', Array, true)
+#6 F:\brandontechsailor\yii_demo\project1\framework\web\CBaseController.php(86): YiiDebugViewRenderer->renderFile(Object(SiteController), 'F:\brandontechs...', Array, true)
+#7 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(866): CBaseController->renderFile('F:\brandontechs...', Array, true)
+#8 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(779): CController->renderPartial('login', Array, true)
+#9 F:\brandontechsailor\yii_demo\project1\demos\testdrive\protected\controllers\SiteController.php(94): CController->render('login', Array)
+#10 F:\brandontechsailor\yii_demo\project1\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#11 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#12 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#13 F:\brandontechsailor\yii_demo\project1\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(277): CController->run('login')
+#15 F:\brandontechsailor\yii_demo\project1\framework\web\CWebApplication.php(136): CWebApplication->runController('site/login')
+#16 F:\brandontechsailor\yii_demo\project1\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#17 F:\brandontechsailor\yii_demo\project1\demos\testdrive\index.php(15): CApplication->run()
+#18 {main} REQUEST_URI=/yii_demo/project1/demos/testdrive/index.php?r=site/login
