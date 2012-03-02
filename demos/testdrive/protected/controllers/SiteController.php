@@ -114,7 +114,19 @@ class SiteController extends Controller
 			$model->attributes=$_POST['RegisterForm'];
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login_after_register())
+			{
+				d($model->username);
+				d($model->password);
+				$user = new User;
+				$user->username = $model->username;
+				$user->password = $model->password;
+				$user->email = $model->username;
+				$user->save();
+				d($user->save());
+				d($user->username);
+				d($user->password);
 				$this->redirect(Yii::app()->user->returnUrl);
+			}
 		}
 		// display the login form
 		$this->render('register',array('model'=>$model));
