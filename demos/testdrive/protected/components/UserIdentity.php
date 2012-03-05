@@ -19,7 +19,33 @@ class UserIdentity extends CUserIdentity
 	{
 		if(!$new_user_login)
 		{
-			$users=array(
+			User::model()->find();
+			$criteria=new CDbCriteria;
+			$criteria->select='username, password, salt, email';  // only select the 'title' column
+			$criteria->condition='username=:username';
+			$criteria->params=array(':username'=>$this->username);
+			
+			$user=User::model()->find($criteria); // $params is not needed
+			// d($criteria);
+			// d($this->username);
+			// d($user->username);
+			// d($user->password);
+			// d($user->email);
+			// d(self::ERROR_USERNAME_INVALID);
+			// d(self::ERROR_NONE);
+			
+			if(empty($user->username) || empty($user->password) || empty($user->email) || empty($user->salt)){
+				$this->errorCode=self::ERROR_USERNAME_INVALID;
+			}
+			else{	
+				if($user->validatePassword($this->password)){
+					$this->errorCode=self::ERROR_NONE;
+				}else{
+					$this->errorCode=self::ERROR_PASSWORD_INVALID;
+				}
+			
+			}
+			/* $users=array(
 				// username => password
 				'demo'=>'demo',
 				'admin'=>'admin',
@@ -29,7 +55,7 @@ class UserIdentity extends CUserIdentity
 			else if($users[$this->username]!==$this->password)
 				$this->errorCode=self::ERROR_PASSWORD_INVALID;
 			else
-				$this->errorCode=self::ERROR_NONE;
+				$this->errorCode=self::ERROR_NONE; */
 		}
 		else
 		{

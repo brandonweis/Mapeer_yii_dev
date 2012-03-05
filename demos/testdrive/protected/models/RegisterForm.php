@@ -38,20 +38,12 @@ class RegisterForm extends CFormModel
 	
 	public function username_validate()
 	{
-		if(!$this->check_email($this->username))
+		if(!User::model()->validateEmail($this->username))
 		{
 			$this->addError('username','Incorrect username format');
 		}
 	}
 	
-	function check_email($email)
-	{
-		if (!eregi("^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$", $email)){ 
-			return false;
-		}else{
-			return true;
-		}
-	}
 	
 	public function login_after_register()
 	{
@@ -68,5 +60,22 @@ class RegisterForm extends CFormModel
 		else
 			return false;
 	}
+	
+	function createRandomSalt() { 
+
+		$chars = "abcdefghijkmnopqrstuvwxyz023456789"; 
+		srand((double)microtime()*1000000); 
+		$i = 0; 
+		$pass = '' ; 
+
+		while ($i <= 7) { 
+			$num = rand() % 33; 
+			$tmp = substr($chars, $num, 1); 
+			$pass = $pass . $tmp; 
+			$i++; 
+		} 
+
+		return $pass; 
+	} 
 
 }

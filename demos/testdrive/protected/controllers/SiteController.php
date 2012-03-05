@@ -115,16 +115,15 @@ class SiteController extends Controller
 			// validate user input and redirect to the previous page if valid
 			if($model->validate() && $model->login_after_register())
 			{
-				d($model->username);
-				d($model->password);
+				$saltValue = $model->createRandomSalt();
 				$user = new User;
 				$user->username = $model->username;
-				$user->password = $model->password;
+				$user->password = User::model()->hashPassword($model->password,$saltValue);
 				$user->email = $model->username;
+				$user->salt = $saltValue;
+				
 				$user->save();
-				d($user->save());
-				d($user->username);
-				d($user->password);
+				
 				$this->redirect(Yii::app()->user->returnUrl);
 			}
 		}

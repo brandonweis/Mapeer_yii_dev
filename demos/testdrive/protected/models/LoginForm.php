@@ -27,6 +27,7 @@ class LoginForm extends CFormModel
 			array('rememberMe', 'boolean'),
 			// password needs to be authenticated
 			array('password', 'authenticate'),
+			array('username', 'username_validate'),
 		);
 	}
 
@@ -40,6 +41,14 @@ class LoginForm extends CFormModel
 		);
 	}
 
+	public function username_validate()
+	{
+		if(!User::model()->validateEmail($this->username))
+		{
+			$this->addError('username','Incorrect username format');
+		}
+	}
+	
 	/**
 	 * Authenticates the password.
 	 * This is the 'authenticate' validator as declared in rules().
