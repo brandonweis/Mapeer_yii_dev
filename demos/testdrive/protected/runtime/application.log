@@ -946,3 +946,115 @@ Stack trace:
 #22 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
 #23 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
 #24 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=user/profile
+2012/03/07 09:37:58 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:328
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 F:\brandontechsailor\mapeer_dev\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(283): CFilterChain->run()
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('profile')
+#9 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('user/profile')
+#10 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#12 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=user/profile
+2012/03/07 09:38:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:328
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#4 F:\brandontechsailor\mapeer_dev\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(283): CFilterChain->run()
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('profile')
+#9 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('user/profile')
+#10 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#12 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=user/profile
+2012/03/07 09:39:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php:170
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php(53): UserController->loadModel(NULL)
+#1 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(50): UserController->actionProfile()
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#6 F:\brandontechsailor\mapeer_dev\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(283): CFilterChain->run()
+#9 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('profile')
+#11 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('user/profile')
+#12 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#14 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=user/profile
+2012/03/07 09:41:50 [error] [exception.CException] exception 'CException' with message 'Property "User.rememberMe" is not defined.' in F:\brandontechsailor\mapeer_dev\framework\base\CComponent.php:131
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\db\ar\CActiveRecord.php(129): CComponent->__get('rememberMe')
+#1 F:\brandontechsailor\mapeer_dev\framework\web\helpers\CHtml.php(2063): CActiveRecord->__get('rememberMe')
+#2 F:\brandontechsailor\mapeer_dev\framework\web\helpers\CHtml.php(1341): CHtml::resolveValue(Object(User), 'rememberMe')
+#3 F:\brandontechsailor\mapeer_dev\framework\web\widgets\CActiveForm.php(658): CHtml::activeCheckBox(Object(User), 'rememberMe', Array)
+#4 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\views\user\profile.php(58): CActiveForm->checkBox(Object(User), 'rememberMe')
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CBaseController.php(119): require('F:\brandontechs...')
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(47): CBaseController->renderInternal('F:\brandontechs...', Array, true)
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CBaseController.php(86): YiiDebugViewRenderer->renderFile(Object(UserController), 'F:\brandontechs...', Array, true)
+#8 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(866): CBaseController->renderFile('F:\brandontechs...', Array, true)
+#9 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(779): CController->renderPartial('profile', Array, true)
+#10 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php(55): CController->render('profile', Array)
+#11 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(50): UserController->actionProfile()
+#12 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#13 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#16 F:\brandontechsailor\mapeer_dev\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(283): CFilterChain->run()
+#19 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('profile')
+#21 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('user/profile')
+#22 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#23 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#24 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=user/profile
+2012/03/07 09:48:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "follow".' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:477
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(262): CController->missingAction('follow')
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('follow')
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('user/follow')
+#3 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#5 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=user/follow
+2012/03/07 09:50:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "follow".' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:477
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(262): CController->missingAction('follow')
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('follow')
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('user/follow')
+#3 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#5 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=user/follow
+2012/03/07 11:27:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "follow".' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:477
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(262): CController->missingAction('follow')
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('follow')
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('user/follow')
+#3 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#5 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=user/follow
+2012/03/07 11:28:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in F:\brandontechsailor\mapeer_dev\framework\web\auth\CAccessControlFilter.php:158
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#3 F:\brandontechsailor\mapeer_dev\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(283): CFilterChain->run()
+#6 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('follow')
+#8 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('user/follow')
+#9 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#10 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#11 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=user/follow

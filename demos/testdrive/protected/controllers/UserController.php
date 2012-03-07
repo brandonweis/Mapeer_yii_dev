@@ -27,7 +27,7 @@ class UserController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view', 'profile'),
+				'actions'=>array('index','view','profile','follow'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -44,9 +44,18 @@ class UserController extends Controller
 		);
 	}
 
-	public function actionProfile($id=Yii::app()->user->id)
+	public function actionFollow()
 	{
-		$this->render('view',array(
+		echo "follow";
+	}
+	
+	public function actionProfile()
+	{
+		// if(empty($id))
+			// $id=Yii::app()->user->id;
+		$id=24;
+		
+		$this->render('profile',array(
 			'model'=>$this->loadModel($id),
 		));
 	}
