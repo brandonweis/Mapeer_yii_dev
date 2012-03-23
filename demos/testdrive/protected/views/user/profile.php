@@ -11,7 +11,7 @@ $this->breadcrumbs=array(
 	<?php 
 	// Sorry for bad shifting, it's not my fault ...
 	 
-		echo CHtml::ajaxSubmitButton('Follow', CHtml::normalizeUrl(array('user/follow')), 
+		echo CHtml::ajaxSubmitButton('Follow', ''/* CHtml::normalizeUrl(array('user/follow')) */, 
 		 array(
 		   'data'=>'js:jQuery(this).parents("form").serialize()+"&isAjaxRequest=1"',               
 		   'success'=>

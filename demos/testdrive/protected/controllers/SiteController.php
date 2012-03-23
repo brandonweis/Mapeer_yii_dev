@@ -121,7 +121,7 @@ class SiteController extends Controller
 				$user->password = User::model()->hashPassword($model->password,$saltValue);
 				$user->email = $model->username;
 				$user->salt = $saltValue;
-				
+
 				$user->save();
 				
 				$this->redirect(Yii::app()->user->returnUrl);

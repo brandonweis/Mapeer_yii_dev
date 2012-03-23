@@ -7,6 +7,9 @@
  */
 class UserIdentity extends CUserIdentity
 {
+	private $_id = NULL;
+
+	
 	/**
 	 * Authenticates a user.
 	 * The example implementation makes sure if the username and password
@@ -21,7 +24,7 @@ class UserIdentity extends CUserIdentity
 		{
 			User::model()->find();
 			$criteria=new CDbCriteria;
-			$criteria->select='username, password, salt, email';  // only select the 'title' column
+			$criteria->select='id, username, password, salt, email';  // select id to store in userIdentity
 			$criteria->condition='username=:username';
 			$criteria->params=array(':username'=>$this->username);
 			
@@ -40,6 +43,7 @@ class UserIdentity extends CUserIdentity
 			else{	
 				if($user->validatePassword($this->password)){
 					$this->errorCode=self::ERROR_NONE;
+					$this->_id=$user->id;
 				}else{
 					$this->errorCode=self::ERROR_PASSWORD_INVALID;
 				}
@@ -63,4 +67,9 @@ class UserIdentity extends CUserIdentity
 		}
 		return !$this->errorCode;
 	}
+	
+	public function getId() {
+        return $this->_id;
+    }
+
 }

@@ -46,18 +46,33 @@ class UserController extends Controller
 
 	public function actionFollow()
 	{
+		if(!isset($_GET['ajax']))
 		echo "follow";
 	}
 	
-	public function actionProfile()
+	public function actionProfile($id=null)
 	{
-		// if(empty($id))
-			// $id=Yii::app()->user->id;
-		$id=24;
-		
-		$this->render('profile',array(
-			'model'=>$this->loadModel($id),
-		));
+		// d($_POST['isAjaxRequest']);
+		if(isset($_POST['isAjaxRequest']) && $_POST['isAjaxRequest']){
+			// do following action here, save the followers id
+			$follower_id=Yii::app()->user->id;
+			$following_id=$id;
+			echo $follower_id;
+			echo $following_id;
+			
+			$user_following=new UserFollowing;
+			$user_following->user_id=$follower_id;
+			$user_following->following_id=$following_id;
+			$user_following->created=time();
+			$user_following->save();
+			// d($user_following);
+			
+		}
+		else{
+			$this->render('profile',array(
+				'model'=>$this->loadModel($id),
+			));
+		}
 	}
 	
 	/**
