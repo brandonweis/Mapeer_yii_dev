@@ -18,8 +18,19 @@ class FileUpload extends CActiveRecord
  
     public function rules()
     {
-        return array(
-            array('image', 'file', 'types'=>'jpg, gif, png'),
-        );
+        return array();
     }
+	
+	public static function model($className=__CLASS__)
+	{
+		return parent::model($className);
+	}
+
+	/**
+	 * @return string the associated database table name
+	 */
+	public function tableName()
+	{
+		return 'fileupload';
+	}
 }
