@@ -13,6 +13,8 @@ class FileUploadController extends CController
 	
     public function actionUploadImage()
     {
+		$this->extract_by_character();
+		
 		$formModel = new ShotUploadForm;
         if(isset($_POST['ShotUploadForm']))
         {
@@ -51,6 +53,36 @@ class FileUploadController extends CController
         }
         $this->render('uploadimage', array('formModel'=>$formModel));
     }
+	
+	private function extract_by_character($text="@crystal travelling with @joseph@gmail.com", $character="@"){
+		
+		static $pos = 0;
+		$space = " ";
+		$extract = array();
+
+		
+		$i=1;
+		while($pos < strlen($text)){
+			
+			$char_pos = strpos($text, $character, $pos);
+			if($char_pos === false){ //end of string to search, 3 equal sign to check for falure of searching instead of when index = 0
+				break;
+			}
+			
+			$space_pos = strpos($text, $space, $char_pos);
+			
+			if(!$space_pos){ //end of string to search
+				$extract[] = substr($text, $char_pos);
+				$pos = strlen($text);
+			}
+			else{
+				$extract[] = substr($text, $char_pos, $space_pos-$char_pos); //no need to substract 1 index as we don't want the space
+				$pos = $space_pos;
+			}
+			
+		}
+
+	}
 }
 
 ?>

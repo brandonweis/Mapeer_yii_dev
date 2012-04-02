@@ -133,3 +133,21 @@
 			});
 	});
 	</script>
+	
+	<style type="text/css">
+		.ui-menu .ui-menu-item {
+			margin: 0;
+			padding: 0;
+			zoom: 1;
+			float: left;
+			clear: left;
+			width: 100%;
+		}
+		.ui-menu .ui-menu-item a {
+			text-decoration: none;
+			display: block;
+			padding: .2em .4em;
+			line-height: 1.5;
+			zoom: 1;
+		}
+	</style>
