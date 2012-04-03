@@ -13,7 +13,11 @@ class FileUploadController extends CController
 	
     public function actionUploadImage()
     {
-		$this->extract_by_character();
+		// $user_str = "";
+		// $user_str = json_encode($this->extract_by_character());
+		// d($user_str$user_str = "";
+		// $user_str = json_encode($this->extract_by_character());
+		// d($user_str);
 		
 		$formModel = new ShotUploadForm;
         if(isset($_POST['ShotUploadForm']))
@@ -37,12 +41,19 @@ class FileUploadController extends CController
 				$imageName =  Yii::app()->request->baseUrl . '/images/' . $imageName . '.' . $imageExtension;
 				d($imageName);	
 
+				$description_with_link = "";
+				
 				$model = new FileUpload;
+				
+				//extract user contact in description
+				$user_str = json_encode($this->extract_by_character($formModel->description, $description_with_link));
 				
 				$model->image = $imageName;
 				$model->user_id = $formModel->user_id;
 				$model->description = $formModel->description;
-				d($model);
+				$model->description_with_link = $description_with_link;
+				$model->user_str = $user_str;
+				// d($model);
 				if($model->save())
 				{
 					// d(Yii::app()->basePath.'/../images/upload.jpg');
@@ -54,35 +65,119 @@ class FileUploadController extends CController
         $this->render('uploadimage', array('formModel'=>$formModel));
     }
 	
-	private function extract_by_character($text="@crystal travelling with @joseph@gmail.com", $character="@"){
+	private function extract_by_character($text="@crystal wanna travel? @brandon@techsailor.com @kokweiong@gmail.com", &$description_with_link, $character="@"){
 		
-		static $pos = 0;
+		$pos = 0;
 		$space = " ";
 		$extract = array();
-
+		$text_to_save = $text;
 		
-		$i=1;
 		while($pos < strlen($text)){
 			
 			$char_pos = strpos($text, $character, $pos);
-			if($char_pos === false){ //end of string to search, 3 equal sign to check for falure of searching instead of when index = 0
+			//end of string to search, 3 equal sign to check for falure of searching instead of when index = 0
+			if($char_pos === false){ 
 				break;
 			}
 			
 			$space_pos = strpos($text, $space, $char_pos);
 			
-			if(!$space_pos){ //end of string to search
-				$extract[] = substr($text, $char_pos);
+			//end of string to search
+			if(!$space_pos){
+				$contact = substr($text, $char_pos+1); //+1 to eliminate "@"
 				$pos = strlen($text);
 			}
 			else{
-				$extract[] = substr($text, $char_pos, $space_pos-$char_pos); //no need to substract 1 index as we don't want the space
+				$contact= substr($text, $char_pos+1, $space_pos-$char_pos); //no need to add 1 index as we don't want the space behind the contact
 				$pos = $space_pos;
 			}
 			
-		}
+			//replace any spaces in contact
+			$contact = str_replace(" ", "", $contact);
+			
+			
+			//default contact type = handler
+			$type = "handler";
+			if(User::model()->validateEmail($contact)){
+				$type = "email";
+			}	
+			
+			$temp_contact = array('contact'=>$contact, 'type'=>$type);
+			
+			//send email to new user or notification to new user
+			$this->notify_user($temp_contact);
+			
+			// d($temp_contact);
+			if($temp_contact['user_id'] != NULL)
+				$extract[] = $temp_contact;
+		
+			
+			// d($extract);
+			//replace the contact with links to the contact profile, replace contact together with the "@"
+			if($type == "email"){
+				$contact_link = "<a href='#" . $temp_contact['user_id'] . "'>@Anonymous</a>";
+			}
+			elseif($type == "handler"){
+				$contact_link = "<a href='#" . $temp_contact['user_id'] . "'>@" . $temp_contact['contact'] . "</a>";
+			}
+			
+			$text_to_save = str_replace("@" . $temp_contact['contact'], $contact_link, $text_to_save); 
 
+		}
+		
+		//return the description with contact link in html by pass reference
+		$description_with_link = $text_to_save;
+		// d($extract);
+		return $extract;
+		
 	}
+	
+	private function notify_user(&$contact = array()){
+		
+		if($contact['type'] == "email"){
+			
+			$user = new User;
+			$email_user = $user->findByAttributes(array('email'=>$contact['contact']));
+			
+			if($email_user){
+				// id the email was registered before, update the mentioned count 
+				$email_user->mentioned_count = $email_user->mentioned_count + 1;
+				
+				$email_user->save();
+				
+				$user_id = $email_user->id;
+			}
+			else{
+			
+				//save the email in the user table with status 'invited' and send email to new user
+				$user = new User;
+				
+				$user->username = $user->email = $contact['contact'];
+				$user->mentioned_count = 1;
+				$user->status = "invited";
+				$user->save();
+				
+				$user_id = $user->id;
+			}
+		}
+		elseif($contact['type'] == "handler"){
+			// look in database for handler to notify existing user
+			
+			$user = new User;
+			$existing_user = $user->findByAttributes(array('handler'=>$contact['contact']));
+
+			if($existing_user){
+				$existing_user->mentioned_count = $existing_user->mentioned_count + 1;
+
+				$existing_user->save();
+				
+				$user_id = $existing_user->id;
+			}
+		}
+		
+		$contact['user_id'] = $user_id;
+	}
+	
 }
 
 ?>

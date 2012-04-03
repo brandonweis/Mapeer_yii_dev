@@ -2396,3 +2396,943 @@ Stack trace:
 #1 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
 #2 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
 #3 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=uploadfile/uploadimage
+2012/04/03 04:25:13 [error] [exception.CException] exception 'CException' with message 'Property "User.mention_count" is not defined.' in F:\brandontechsailor\mapeer_dev\framework\base\CComponent.php:131
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\db\ar\CActiveRecord.php(129): CComponent->__get('mention_count')
+#1 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(117): CActiveRecord->__get('mention_count')
+#2 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(90): FileUploadController->notify_user(Array)
+#3 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(16): FileUploadController->extract_by_character()
+#4 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(50): FileUploadController->actionUploadImage()
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('uploadimage')
+#9 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/uplo...')
+#10 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#12 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/uploadimage
+2012/04/03 04:27:11 [error] [exception.CException] exception 'CException' with message 'Property "User.mention_count" is not defined.' in F:\brandontechsailor\mapeer_dev\framework\base\CComponent.php:131
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\db\ar\CActiveRecord.php(129): CComponent->__get('mention_count')
+#1 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(117): CActiveRecord->__get('mention_count')
+#2 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(90): FileUploadController->notify_user(Array)
+#3 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(16): FileUploadController->extract_by_character()
+#4 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(50): FileUploadController->actionUploadImage()
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('uploadimage')
+#9 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/uplo...')
+#10 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#12 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/uploadimage
+2012/04/03 04:28:03 [warning] [application] Failed to set unsafe attribute " CActiveRecord _md" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (119)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:28:03 [warning] [application] Failed to set unsafe attribute " CActiveRecord _new" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (119)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:28:03 [warning] [application] Failed to set unsafe attribute " CActiveRecord _attributes" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (119)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:28:03 [warning] [application] Failed to set unsafe attribute " CActiveRecord _related" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (119)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:28:03 [warning] [application] Failed to set unsafe attribute " CActiveRecord _c" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (119)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:28:03 [warning] [application] Failed to set unsafe attribute " CActiveRecord _pk" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (119)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:28:03 [warning] [application] Failed to set unsafe attribute " CActiveRecord _alias" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (119)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:28:03 [warning] [application] Failed to set unsafe attribute " CModel _errors" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (119)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:28:03 [warning] [application] Failed to set unsafe attribute " CModel _validators" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (119)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:28:03 [warning] [application] Failed to set unsafe attribute " CModel _scenario" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (119)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:28:03 [warning] [application] Failed to set unsafe attribute " CComponent _e" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (119)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:28:03 [warning] [application] Failed to set unsafe attribute " CComponent _m" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (119)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CActiveRecord _md" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CActiveRecord _new" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CActiveRecord _attributes" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CActiveRecord _related" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CActiveRecord _c" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CActiveRecord _pk" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CActiveRecord _alias" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CModel _errors" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CModel _validators" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CModel _scenario" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CComponent _e" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CComponent _m" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CActiveRecord _md" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CActiveRecord _new" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CActiveRecord _attributes" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CActiveRecord _related" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CActiveRecord _c" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CActiveRecord _pk" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CActiveRecord _alias" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CModel _errors" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CModel _validators" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CModel _scenario" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CComponent _e" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:35:30 [warning] [application] Failed to set unsafe attribute " CComponent _m" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CActiveRecord _md" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CActiveRecord _new" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CActiveRecord _attributes" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CActiveRecord _related" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CActiveRecord _c" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CActiveRecord _pk" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CActiveRecord _alias" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CModel _errors" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CModel _validators" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CModel _scenario" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CComponent _e" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CComponent _m" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CActiveRecord _md" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CActiveRecord _new" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CActiveRecord _attributes" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CActiveRecord _related" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CActiveRecord _c" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CActiveRecord _pk" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CActiveRecord _alias" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CModel _errors" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CModel _validators" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CModel _scenario" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CComponent _e" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:36:07 [warning] [application] Failed to set unsafe attribute " CComponent _m" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:37:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _md" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:37:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _new" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:37:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _attributes" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:37:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _related" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:37:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _c" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:37:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _pk" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:37:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _alias" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:37:19 [warning] [application] Failed to set unsafe attribute " CModel _errors" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:37:19 [warning] [application] Failed to set unsafe attribute " CModel _validators" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:37:19 [warning] [application] Failed to set unsafe attribute " CModel _scenario" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:37:19 [warning] [application] Failed to set unsafe attribute " CComponent _e" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:37:19 [warning] [application] Failed to set unsafe attribute " CComponent _m" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:38:18 [warning] [application] Failed to set unsafe attribute " CActiveRecord _md" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:38:18 [warning] [application] Failed to set unsafe attribute " CActiveRecord _new" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:38:18 [warning] [application] Failed to set unsafe attribute " CActiveRecord _attributes" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:38:18 [warning] [application] Failed to set unsafe attribute " CActiveRecord _related" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:38:18 [warning] [application] Failed to set unsafe attribute " CActiveRecord _c" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:38:18 [warning] [application] Failed to set unsafe attribute " CActiveRecord _pk" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:38:18 [warning] [application] Failed to set unsafe attribute " CActiveRecord _alias" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:38:18 [warning] [application] Failed to set unsafe attribute " CModel _errors" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:38:18 [warning] [application] Failed to set unsafe attribute " CModel _validators" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:38:18 [warning] [application] Failed to set unsafe attribute " CModel _scenario" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:38:18 [warning] [application] Failed to set unsafe attribute " CComponent _e" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:38:18 [warning] [application] Failed to set unsafe attribute " CComponent _m" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:38:18 [error] [exception.CException] exception 'CException' with message 'Property "User.columns" is not defined.' in F:\brandontechsailor\mapeer_dev\framework\base\CComponent.php:131
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\db\ar\CActiveRecord.php(129): CComponent->__get('columns')
+#1 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(110): CActiveRecord->__get('columns')
+#2 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(90): FileUploadController->notify_user(Array)
+#3 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(16): FileUploadController->extract_by_character()
+#4 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(50): FileUploadController->actionUploadImage()
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('uploadimage')
+#9 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/uplo...')
+#10 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#12 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/uploadimage
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _md" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _new" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _attributes" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _related" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _c" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _pk" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _alias" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute " CModel _errors" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute " CModel _validators" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute " CModel _scenario" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute " CComponent _e" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute " CComponent _m" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute "id" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute "fb_id" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute "handler" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute "salt" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute "role" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute "followers_str" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute "followings_str" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute "mentioned_count" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:39:19 [warning] [application] Failed to set unsafe attribute "status" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (110)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:09 [warning] [application] Failed to set unsafe attribute " CActiveRecord _md" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:09 [warning] [application] Failed to set unsafe attribute " CActiveRecord _new" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:09 [warning] [application] Failed to set unsafe attribute " CActiveRecord _attributes" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:09 [warning] [application] Failed to set unsafe attribute " CActiveRecord _related" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:09 [warning] [application] Failed to set unsafe attribute " CActiveRecord _c" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:09 [warning] [application] Failed to set unsafe attribute " CActiveRecord _pk" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:09 [warning] [application] Failed to set unsafe attribute " CActiveRecord _alias" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:09 [warning] [application] Failed to set unsafe attribute " CModel _errors" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:09 [warning] [application] Failed to set unsafe attribute " CModel _validators" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:09 [warning] [application] Failed to set unsafe attribute " CModel _scenario" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:09 [warning] [application] Failed to set unsafe attribute " CComponent _e" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:09 [warning] [application] Failed to set unsafe attribute " CComponent _m" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:22 [warning] [application] Failed to set unsafe attribute " CActiveRecord _md" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:22 [warning] [application] Failed to set unsafe attribute " CActiveRecord _new" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:22 [warning] [application] Failed to set unsafe attribute " CActiveRecord _attributes" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:22 [warning] [application] Failed to set unsafe attribute " CActiveRecord _related" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:22 [warning] [application] Failed to set unsafe attribute " CActiveRecord _c" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:22 [warning] [application] Failed to set unsafe attribute " CActiveRecord _pk" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:22 [warning] [application] Failed to set unsafe attribute " CActiveRecord _alias" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:22 [warning] [application] Failed to set unsafe attribute " CModel _errors" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:22 [warning] [application] Failed to set unsafe attribute " CModel _validators" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:22 [warning] [application] Failed to set unsafe attribute " CModel _scenario" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:22 [warning] [application] Failed to set unsafe attribute " CComponent _e" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:22 [warning] [application] Failed to set unsafe attribute " CComponent _m" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (132)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:41 [warning] [application] Failed to set unsafe attribute " CActiveRecord _md" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (133)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:41 [warning] [application] Failed to set unsafe attribute " CActiveRecord _new" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (133)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:41 [warning] [application] Failed to set unsafe attribute " CActiveRecord _attributes" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (133)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:41 [warning] [application] Failed to set unsafe attribute " CActiveRecord _related" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (133)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:41 [warning] [application] Failed to set unsafe attribute " CActiveRecord _c" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (133)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:41 [warning] [application] Failed to set unsafe attribute " CActiveRecord _pk" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (133)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:41 [warning] [application] Failed to set unsafe attribute " CActiveRecord _alias" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (133)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:41 [warning] [application] Failed to set unsafe attribute " CModel _errors" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (133)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:41 [warning] [application] Failed to set unsafe attribute " CModel _validators" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (133)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:41 [warning] [application] Failed to set unsafe attribute " CModel _scenario" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (133)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:41 [warning] [application] Failed to set unsafe attribute " CComponent _e" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (133)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:43:41 [warning] [application] Failed to set unsafe attribute " CComponent _m" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (133)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:44:31 [warning] [application] Failed to set unsafe attribute " CActiveRecord _md" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (130)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:44:31 [warning] [application] Failed to set unsafe attribute " CActiveRecord _new" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (130)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:44:31 [warning] [application] Failed to set unsafe attribute " CActiveRecord _attributes" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (130)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:44:31 [warning] [application] Failed to set unsafe attribute " CActiveRecord _related" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (130)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:44:31 [warning] [application] Failed to set unsafe attribute " CActiveRecord _c" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (130)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:44:31 [warning] [application] Failed to set unsafe attribute " CActiveRecord _pk" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (130)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:44:31 [warning] [application] Failed to set unsafe attribute " CActiveRecord _alias" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (130)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:44:31 [warning] [application] Failed to set unsafe attribute " CModel _errors" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (130)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:44:31 [warning] [application] Failed to set unsafe attribute " CModel _validators" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (130)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:44:31 [warning] [application] Failed to set unsafe attribute " CModel _scenario" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (130)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:44:31 [warning] [application] Failed to set unsafe attribute " CComponent _e" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (130)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 04:44:31 [warning] [application] Failed to set unsafe attribute " CComponent _m" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (130)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (90)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (16)
+2012/04/03 09:40:05 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (23)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/03 09:40:05 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (23)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/03 09:54:19 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (23)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/03 09:54:19 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (23)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/03 09:54:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _md" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+2012/04/03 09:54:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _new" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+2012/04/03 09:54:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _attributes" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+2012/04/03 09:54:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _related" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+2012/04/03 09:54:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _c" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+2012/04/03 09:54:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _pk" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+2012/04/03 09:54:19 [warning] [application] Failed to set unsafe attribute " CActiveRecord _alias" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+2012/04/03 09:54:19 [warning] [application] Failed to set unsafe attribute " CModel _errors" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+2012/04/03 09:54:19 [warning] [application] Failed to set unsafe attribute " CModel _validators" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+2012/04/03 09:54:19 [warning] [application] Failed to set unsafe attribute " CModel _scenario" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+2012/04/03 09:54:19 [warning] [application] Failed to set unsafe attribute " CComponent _e" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+2012/04/03 09:54:19 [warning] [application] Failed to set unsafe attribute " CComponent _m" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+2012/04/03 09:55:54 [warning] [application] Failed to set unsafe attribute " CActiveRecord _md" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:55:54 [warning] [application] Failed to set unsafe attribute " CActiveRecord _new" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:55:54 [warning] [application] Failed to set unsafe attribute " CActiveRecord _attributes" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:55:54 [warning] [application] Failed to set unsafe attribute " CActiveRecord _related" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:55:54 [warning] [application] Failed to set unsafe attribute " CActiveRecord _c" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:55:54 [warning] [application] Failed to set unsafe attribute " CActiveRecord _pk" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:55:54 [warning] [application] Failed to set unsafe attribute " CActiveRecord _alias" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:55:54 [warning] [application] Failed to set unsafe attribute " CModel _errors" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:55:54 [warning] [application] Failed to set unsafe attribute " CModel _validators" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:55:54 [warning] [application] Failed to set unsafe attribute " CModel _scenario" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:55:54 [warning] [application] Failed to set unsafe attribute " CComponent _e" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:55:54 [warning] [application] Failed to set unsafe attribute " CComponent _m" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:58:28 [warning] [application] Failed to set unsafe attribute " CActiveRecord _md" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:58:28 [warning] [application] Failed to set unsafe attribute " CActiveRecord _new" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:58:28 [warning] [application] Failed to set unsafe attribute " CActiveRecord _attributes" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:58:28 [warning] [application] Failed to set unsafe attribute " CActiveRecord _related" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:58:28 [warning] [application] Failed to set unsafe attribute " CActiveRecord _c" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:58:28 [warning] [application] Failed to set unsafe attribute " CActiveRecord _pk" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:58:28 [warning] [application] Failed to set unsafe attribute " CActiveRecord _alias" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:58:28 [warning] [application] Failed to set unsafe attribute " CModel _errors" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:58:28 [warning] [application] Failed to set unsafe attribute " CModel _validators" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:58:28 [warning] [application] Failed to set unsafe attribute " CModel _scenario" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:58:28 [warning] [application] Failed to set unsafe attribute " CComponent _e" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:58:28 [warning] [application] Failed to set unsafe attribute " CComponent _m" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:59:33 [warning] [application] Failed to set unsafe attribute " CActiveRecord _md" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:59:33 [warning] [application] Failed to set unsafe attribute " CActiveRecord _new" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:59:33 [warning] [application] Failed to set unsafe attribute " CActiveRecord _attributes" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:59:33 [warning] [application] Failed to set unsafe attribute " CActiveRecord _related" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:59:33 [warning] [application] Failed to set unsafe attribute " CActiveRecord _c" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:59:33 [warning] [application] Failed to set unsafe attribute " CActiveRecord _pk" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:59:33 [warning] [application] Failed to set unsafe attribute " CActiveRecord _alias" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:59:33 [warning] [application] Failed to set unsafe attribute " CModel _errors" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:59:33 [warning] [application] Failed to set unsafe attribute " CModel _validators" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:59:33 [warning] [application] Failed to set unsafe attribute " CModel _scenario" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:59:33 [warning] [application] Failed to set unsafe attribute " CComponent _e" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 09:59:33 [warning] [application] Failed to set unsafe attribute " CComponent _m" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (151)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 10:08:43 [warning] [application] Failed to set unsafe attribute " CActiveRecord _md" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (152)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 10:08:43 [warning] [application] Failed to set unsafe attribute " CActiveRecord _new" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (152)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 10:08:43 [warning] [application] Failed to set unsafe attribute " CActiveRecord _attributes" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (152)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 10:08:43 [warning] [application] Failed to set unsafe attribute " CActiveRecord _related" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (152)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 10:08:43 [warning] [application] Failed to set unsafe attribute " CActiveRecord _c" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (152)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 10:08:43 [warning] [application] Failed to set unsafe attribute " CActiveRecord _pk" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (152)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 10:08:43 [warning] [application] Failed to set unsafe attribute " CActiveRecord _alias" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (152)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 10:08:43 [warning] [application] Failed to set unsafe attribute " CModel _errors" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (152)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 10:08:43 [warning] [application] Failed to set unsafe attribute " CModel _validators" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (152)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 10:08:43 [warning] [application] Failed to set unsafe attribute " CModel _scenario" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (152)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 10:08:43 [warning] [application] Failed to set unsafe attribute " CComponent _e" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (152)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 10:08:43 [warning] [application] Failed to set unsafe attribute " CComponent _m" of "User".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (152)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (101)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+2012/04/03 10:31:24 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (23)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/03 10:31:24 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (23)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/03 10:36:12 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (23)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/03 10:36:12 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (23)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/03 10:36:34 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (23)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/03 10:36:34 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (23)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/03 10:39:05 [error] [php] Missing argument 2 for FileUploadController::extract_by_character(), called in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php on line 17 and defined (F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php:66)
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams()
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): FileUploadController->runAction()
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): FileUploadController->runActionWithFilters()
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): FileUploadController->run()
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#5 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CWebApplication->run()
+REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/uploadimage
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (66)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (17)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
