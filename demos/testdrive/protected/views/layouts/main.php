@@ -16,10 +16,18 @@
 	
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/jquery/themes/base/jquery.ui.all.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/jquery/demos/demos.css" />
+	
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/autocomplete/jquery-autocomplete.css" />
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 	
+	<script src="http://maps.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
+	
+	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/gmap3/gmap3.min.js" /></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/autocomplete/jquery-autocomplete.min.js" /></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/gmap3/demo/external/markerwithlabel.js" /></script>
+	
 
 </head>
 

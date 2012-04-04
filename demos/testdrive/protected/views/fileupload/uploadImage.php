@@ -57,18 +57,108 @@
 	</div>
 	
 	<div class="row">
+		<?php echo $form->labelEx($formModel,'location'); ?>
+		<?php echo $form->textField($formModel,'location', array('id'=>'address')); ?>
+		<?php echo $form->error($formModel,'location'); ?>
+	</div>
+	
+	<div class="row">
 		<?php echo $form->hiddenField($formModel,'user_id', array('value'=>Yii::app()->user->id)); ?>
 	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton('Upload'); ?>
 	</div>
-
+	
 <?php $this->endWidget(); ?>
 </div><!-- form -->
 
-	<script>
+<div id="test" class="gmap3"></div>
+
+<style>
+      .gmap3{
+        margin: 20px auto;
+        border: 1px dashed #C0C0C0;
+        width: 500px;
+        height: 250px;
+      }
+      .labels {
+       color: red;
+       background-color: white;
+       font-family: "Lucida Grande", "Arial", sans-serif;
+       font-size: 11px;
+       font-weight: bold;
+       text-align: center;
+       width: 100px;     
+       border: 2px solid black;
+       white-space: nowrap;
+     }
+</style>
+
+<script>
 	$(function() {
+		
+// other way to use setDefault
+//$().gmap3('setDefault', {classes:{Marker:MarkerWithLabel }});
+
+// $('#test1').gmap3(
+	// { action:'setDefault', 
+		// classes:{Marker:MarkerWithLabel}
+	// },
+	// { action: 'addMarker',
+		// address: "Haltern am See, Weseler Str. 151",
+		// marker:{
+			// labelContent: "$425K",
+			// labelAnchor: new google.maps.Point(52, -2),
+			// labelClass: "labels",
+			// labelStyle: {opacity: 0.75},
+			// labelContent: "Here is a label !"
+		// },
+		// map:{
+			// center: true,
+			// zoom: 14,
+			// mapTypeId: google.maps.MapTypeId.TERRAIN
+		// }
+	// }
+// );
+
+$("#test").gmap3();
+ 
+$('#address').autocomplete({
+	source: function() {
+		$("#test").gmap3({
+			action:'getAddress',
+			address: $(this).val(),
+			callback:function(results){
+				if (!results) return;
+				$('#address').autocomplete(
+					'display',
+					results,
+					false
+				);
+			}
+		});
+	},
+	cb:{
+	cast: function(item){
+		// alert(item.formatted_address);
+		return item.formatted_address;
+	},
+	select: function(item) {
+			//getting lat annd lng separately
+			// alert(item.geometry.location.lat()+ " "+item.geometry.location.lng());
+			// alert();
+			$("#test").gmap3(
+				{action:'clear', name:'marker'},
+				{action:'addMarker',
+					latLng:item.geometry.location,
+					map:{center:true}
+				}
+			);
+		}
+	}
+});
+		
 		var availableTags = [
 			"ActionScript",
 			"AppleScript",
@@ -132,22 +222,22 @@
 				}
 			});
 	});
-	</script>
+</script>
 	
-	<style type="text/css">
-		.ui-menu .ui-menu-item {
-			margin: 0;
-			padding: 0;
-			zoom: 1;
-			float: left;
-			clear: left;
-			width: 100%;
-		}
-		.ui-menu .ui-menu-item a {
-			text-decoration: none;
-			display: block;
-			padding: .2em .4em;
-			line-height: 1.5;
-			zoom: 1;
-		}
-	</style>
+<style type="text/css">
+	.ui-menu .ui-menu-item {
+		margin: 0;
+		padding: 0;
+		zoom: 1;
+		float: left;
+		clear: left;
+		width: 100%;
+	}
+	.ui-menu .ui-menu-item a {
+		text-decoration: none;
+		display: block;
+		padding: .2em .4em;
+		line-height: 1.5;
+		zoom: 1;
+	}
+</style>

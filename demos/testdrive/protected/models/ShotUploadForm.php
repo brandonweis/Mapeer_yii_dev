@@ -10,6 +10,7 @@ class ShotUploadForm extends CFormModel
 	public $image;
 	public $user_id;
 	public $description;
+	public $location;
 
 	public function rules()
     {
@@ -32,6 +33,7 @@ class ShotUploadForm extends CFormModel
 		return array(
 			'image'=>'You image here!',
 			'description'=>'Share your photo story!',
+			'location'=>'Where did you take this photo?',
 		);
 	}
 
