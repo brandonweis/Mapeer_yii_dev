@@ -122,7 +122,81 @@
 	// }
 // );
 
-$("#test").gmap3();
+//store address
+var content = "";
+
+$('#test').gmap3(
+	{
+		action: 'init',
+		events:{
+			click: function(oveerlay, clicked_point){
+				// alert('map clicked ' + clicked_point.latLng.lat() + ", " + clicked_point.latLng.lng());
+				getAddress(this, clicked_point);
+				// addMarker(this, clicked_point, address);
+			},
+		}
+	}
+);
+
+
+function addMarker(map, location, address){
+	map.gmap3(
+		{ 
+			action: 'addMarker',
+			latLng: location.latLng,
+			map:{
+				center: true,
+				zoom: 5
+			},
+			marker:{
+				options:{
+					draggable: true
+				}, 
+				events:{
+					dragend: function(marker){
+						// $(this).gmap3({
+							// action:'getAddress',
+							// latLng:marker.getPosition(),
+							// callback:function(results){
+								// var map = $(this).gmap3('get'),
+								  // infowindow = $(this).gmap3({action:'get', name:'infowindow'}),
+								  // content = results && results[1] ? results && results[1].formatted_address : 'no address';
+								// if (infowindow){
+									// infowindow.open(map, marker);
+									// infowindow.setContent(content);
+								// }else{
+									// $(this).gmap3({action:'addinfowindow', anchor:marker, options:{content: content}});
+								// }
+							// }
+						// });
+						
+						getAddress(this, marker);
+					}
+				}
+			},
+			infowindow:{
+				options:{
+				content: address
+				}
+			}
+		}
+	);
+}
+
+function getAddress(map, location){
+	map.gmap3({
+		action:'getAddress',
+		latLng:location.latLng,
+		callback:function(results){
+
+			content = results && results[1] ? results && results[1].formatted_address : 'no address';
+			
+			$('#address').val(content);
+			
+			addMarker(this, location, content);
+		}
+	});
+}
  
 $('#address').autocomplete({
 	source: function() {
