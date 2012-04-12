@@ -14,6 +14,9 @@ class FileUpload extends CActiveRecord
 	public $image;
 	public $user_id;
 	public $description;
+	public $location;
+	public $lat;
+	public $lng;
     // ... other attributes
  
     public function rules()

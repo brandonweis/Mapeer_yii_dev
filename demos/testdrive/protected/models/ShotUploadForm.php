@@ -11,6 +11,8 @@ class ShotUploadForm extends CFormModel
 	public $user_id;
 	public $description;
 	public $location;
+	public $lat;
+	public $lng;
 
 	public function rules()
     {

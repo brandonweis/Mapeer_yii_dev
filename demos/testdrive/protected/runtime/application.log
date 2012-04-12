@@ -3402,3 +3402,523 @@ Stack trace:
 #17 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
 #18 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
 #19 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/uploadimage
+2012/04/09 06:57:37 [error] [exception.CException] exception 'CException' with message 'Property "ShotUploadForm.lat" is not defined.' in F:\brandontechsailor\mapeer_dev\framework\base\CComponent.php:131
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\helpers\CHtml.php(2063): CComponent->__get('lat')
+#1 F:\brandontechsailor\mapeer_dev\framework\web\helpers\CHtml.php(1791): CHtml::resolveValue(Object(ShotUploadForm), 'lat')
+#2 F:\brandontechsailor\mapeer_dev\framework\web\helpers\CHtml.php(1199): CHtml::activeInputField('text', Object(ShotUploadForm), 'lat', Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\widgets\CActiveForm.php(568): CHtml::activeTextField(Object(ShotUploadForm), 'lat', Array)
+#4 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\views\fileupload\uploadImage.php(64): CActiveForm->textField(Object(ShotUploadForm), 'lat', Array)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CBaseController.php(119): require('F:\brandontechs...')
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(47): CBaseController->renderInternal('F:\brandontechs...', Array, true)
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CBaseController.php(86): YiiDebugViewRenderer->renderFile(Object(FileUploadController), 'F:\brandontechs...', Array, true)
+#8 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(866): CBaseController->renderFile('F:\brandontechs...', Array, true)
+#9 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(779): CController->renderPartial('uploadimage', Array, true)
+#10 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(65): CController->render('uploadimage', Array)
+#11 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(50): FileUploadController->actionUploadImage()
+#12 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#13 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#14 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('uploadimage')
+#16 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/uplo...')
+#17 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#18 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#19 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/uploadimage
+2012/04/09 07:05:10 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/09 07:05:10 [warning] [application] Failed to set unsafe attribute "location" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/09 07:05:10 [warning] [application] Failed to set unsafe attribute "lat" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/09 07:05:10 [warning] [application] Failed to set unsafe attribute "lng" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/09 07:05:10 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/09 07:05:51 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/09 07:05:51 [warning] [application] Failed to set unsafe attribute "location" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/09 07:05:51 [warning] [application] Failed to set unsafe attribute "lat" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/09 07:05:51 [warning] [application] Failed to set unsafe attribute "lng" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/09 07:05:51 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/09 07:06:02 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/09 07:06:02 [warning] [application] Failed to set unsafe attribute "location" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/09 07:06:02 [warning] [application] Failed to set unsafe attribute "lat" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/09 07:06:02 [warning] [application] Failed to set unsafe attribute "lng" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/09 07:06:02 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 04:10:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploadfile/uploadimage".' in F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php:281
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('uploadfile/uplo...')
+#1 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#3 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=uploadfile/uploadimage
+2012/04/10 04:10:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploadfile/uploadimage".' in F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php:281
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('uploadfile/uplo...')
+#1 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#3 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=uploadfile/uploadimage
+2012/04/10 04:10:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploadfile/uploadimage".' in F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php:281
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('uploadfile/uplo...')
+#1 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#3 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=uploadfile/uploadimage
+2012/04/10 05:01:46 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 05:01:46 [warning] [application] Failed to set unsafe attribute "location" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 05:01:46 [warning] [application] Failed to set unsafe attribute "lat" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 05:01:46 [warning] [application] Failed to set unsafe attribute "lng" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 05:01:46 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 05:05:12 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 05:05:12 [warning] [application] Failed to set unsafe attribute "location" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 05:05:12 [warning] [application] Failed to set unsafe attribute "lat" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 05:05:12 [warning] [application] Failed to set unsafe attribute "lng" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 05:05:12 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:33:29 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:33:29 [warning] [application] Failed to set unsafe attribute "location" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:33:29 [warning] [application] Failed to set unsafe attribute "lat" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:33:29 [warning] [application] Failed to set unsafe attribute "lng" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:33:29 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:34:45 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:34:45 [warning] [application] Failed to set unsafe attribute "location" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:34:45 [warning] [application] Failed to set unsafe attribute "lat" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:34:45 [warning] [application] Failed to set unsafe attribute "lng" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:34:45 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:35:11 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:35:11 [warning] [application] Failed to set unsafe attribute "location" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:35:11 [warning] [application] Failed to set unsafe attribute "lat" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:35:11 [warning] [application] Failed to set unsafe attribute "lng" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:35:11 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:36:52 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:36:52 [warning] [application] Failed to set unsafe attribute "location" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:36:52 [warning] [application] Failed to set unsafe attribute "lat" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:36:52 [warning] [application] Failed to set unsafe attribute "lng" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:36:52 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:42:50 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:42:50 [warning] [application] Failed to set unsafe attribute "location" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:42:50 [warning] [application] Failed to set unsafe attribute "lat" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:42:50 [warning] [application] Failed to set unsafe attribute "lng" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:42:50 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:45:11 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:45:11 [warning] [application] Failed to set unsafe attribute "location" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:45:11 [warning] [application] Failed to set unsafe attribute "lat" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:45:11 [warning] [application] Failed to set unsafe attribute "lng" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:45:11 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 07:55:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php:191
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php(73): UserController->loadModel('24')
+#1 [internal function]: UserController->actionProfile('24')
+#2 F:\brandontechsailor\mapeer_dev\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\mapeer_dev\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(283): CFilterChain->run()
+#11 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('profile')
+#13 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('user/profile')
+#14 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#15 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#16 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=user/profile&id=24
+2012/04/10 07:56:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php:191
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php(73): UserController->loadModel(NULL)
+#1 [internal function]: UserController->actionProfile(NULL)
+#2 F:\brandontechsailor\mapeer_dev\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\mapeer_dev\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(283): CFilterChain->run()
+#11 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('profile')
+#13 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('user/profile/24')
+#14 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#15 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#16 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=user/profile/24
+2012/04/10 07:56:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php:191
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php(73): UserController->loadModel('24')
+#1 [internal function]: UserController->actionProfile('24')
+#2 F:\brandontechsailor\mapeer_dev\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\mapeer_dev\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(283): CFilterChain->run()
+#11 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('profile')
+#13 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('user/profile')
+#14 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#15 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#16 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=user/profile&id=24
+2012/04/10 07:58:03 [error] [exception.CException] exception 'CException' with message 'FileUploadController and its behaviors do not have a method or closure named "loadModel".' in F:\brandontechsailor\mapeer_dev\framework\base\CComponent.php:269
+Stack trace:
+#0 [internal function]: CComponent->__call('loadModel', Array)
+#1 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(17): FileUploadController->loadModel('16')
+#2 [internal function]: FileUploadController->actionViewShot('16')
+#3 F:\brandontechsailor\mapeer_dev\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs(Object(FileUploadController), Array)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FileUploadController), Object(ReflectionMethod), Array)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('viewshot')
+#9 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/view...')
+#10 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#12 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/viewshot&id=16
+2012/04/10 08:07:47 [error] [exception.CException] exception 'CException' with message 'FileUploadController and its behaviors do not have a method or closure named "loadModel".' in F:\brandontechsailor\mapeer_dev\framework\base\CComponent.php:269
+Stack trace:
+#0 [internal function]: CComponent->__call('loadModel', Array)
+#1 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(18): FileUploadController->loadModel('16')
+#2 [internal function]: FileUploadController->actionViewShot('16')
+#3 F:\brandontechsailor\mapeer_dev\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs(Object(FileUploadController), Array)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FileUploadController), Object(ReflectionMethod), Array)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('viewshot')
+#9 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/view...')
+#10 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#12 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/viewshot&id=16
+2012/04/10 08:17:21 [error] [exception.CException] exception 'CException' with message 'FileUploadController and its behaviors do not have a method or closure named "loadModel".' in F:\brandontechsailor\mapeer_dev\framework\base\CComponent.php:269
+Stack trace:
+#0 [internal function]: CComponent->__call('loadModel', Array)
+#1 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(18): FileUploadController->loadModel('16')
+#2 [internal function]: FileUploadController->actionViewShot('16')
+#3 F:\brandontechsailor\mapeer_dev\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs(Object(FileUploadController), Array)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FileUploadController), Object(ReflectionMethod), Array)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('viewshot')
+#9 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/view...')
+#10 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#12 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/viewshot&id=16
+2012/04/10 08:18:01 [error] [exception.CException] exception 'CException' with message 'FileUploadController and its behaviors do not have a method or closure named "loadModel".' in F:\brandontechsailor\mapeer_dev\framework\base\CComponent.php:269
+Stack trace:
+#0 [internal function]: CComponent->__call('loadModel', Array)
+#1 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(16): FileUploadController->loadModel('16')
+#2 [internal function]: FileUploadController->actionViewShot('16')
+#3 F:\brandontechsailor\mapeer_dev\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs(Object(FileUploadController), Array)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FileUploadController), Object(ReflectionMethod), Array)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('viewshot')
+#9 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/view...')
+#10 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#12 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/viewshot&id=16
+2012/04/10 08:21:23 [error] [exception.CException] exception 'CException' with message 'Property "FileUploadController.breadcrumbs" is not defined.' in F:\brandontechsailor\mapeer_dev\framework\base\CComponent.php:174
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\views\fileupload\viewshot.php(3): CComponent->__set('breadcrumbs', Array)
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CBaseController.php(119): require('F:\brandontechs...')
+#2 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(47): CBaseController->renderInternal('F:\brandontechs...', Array, true)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CBaseController.php(86): YiiDebugViewRenderer->renderFile(Object(FileUploadController), 'F:\brandontechs...', Array, true)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(866): CBaseController->renderFile('F:\brandontechs...', Array, true)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(779): CController->renderPartial('viewshot', Array, true)
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(22): CController->render('viewshot', Array)
+#7 [internal function]: FileUploadController->actionViewShot('16')
+#8 F:\brandontechsailor\mapeer_dev\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs(Object(FileUploadController), Array)
+#9 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FileUploadController), Object(ReflectionMethod), Array)
+#10 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#11 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#12 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('viewshot')
+#14 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/view...')
+#15 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#16 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#17 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/viewshot&id=16
+2012/04/10 08:22:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php:191
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php(73): UserController->loadModel('24')
+#1 [internal function]: UserController->actionProfile('24')
+#2 F:\brandontechsailor\mapeer_dev\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\mapeer_dev\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(283): CFilterChain->run()
+#11 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('profile')
+#13 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('user/profile')
+#14 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#15 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#16 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=user/profile&id=24
+2012/04/10 08:24:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "profile".' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:477
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(262): CController->missingAction('profile')
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('profile')
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('site/profile')
+#3 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#5 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=site/profile&id=24
+2012/04/10 08:24:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php:191
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php(73): UserController->loadModel('24')
+#1 [internal function]: UserController->actionProfile('24')
+#2 F:\brandontechsailor\mapeer_dev\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\mapeer_dev\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(283): CFilterChain->run()
+#11 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('profile')
+#13 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('user/profile')
+#14 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#15 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#16 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=user/profile&id=24
+2012/04/10 08:25:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php:191
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php(73): UserController->loadModel(NULL)
+#1 [internal function]: UserController->actionProfile(NULL)
+#2 F:\brandontechsailor\mapeer_dev\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\mapeer_dev\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(283): CFilterChain->run()
+#11 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('profile')
+#13 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('user/profile/24')
+#14 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#15 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#16 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=user/profile/24
+2012/04/10 08:27:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php:191
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php(73): UserController->loadModel(NULL)
+#1 [internal function]: UserController->actionProfile(NULL)
+#2 F:\brandontechsailor\mapeer_dev\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\mapeer_dev\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(283): CFilterChain->run()
+#11 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('profile')
+#13 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('user/profile')
+#14 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#15 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#16 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=user/profile
+2012/04/10 08:27:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php:191
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php(73): UserController->loadModel('24')
+#1 [internal function]: UserController->actionProfile('24')
+#2 F:\brandontechsailor\mapeer_dev\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\mapeer_dev\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(283): CFilterChain->run()
+#11 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('profile')
+#13 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('user/profile')
+#14 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#15 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#16 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=user/profile&id=24
+2012/04/10 08:28:25 [error] [exception.CException] exception 'CException' with message 'Property "FileUploadController.breadcrumbs" is not defined.' in F:\brandontechsailor\mapeer_dev\framework\base\CComponent.php:174
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\views\fileupload\viewshot.php(3): CComponent->__set('breadcrumbs', Array)
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CBaseController.php(119): require('F:\brandontechs...')
+#2 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(47): CBaseController->renderInternal('F:\brandontechs...', Array, true)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CBaseController.php(86): YiiDebugViewRenderer->renderFile(Object(FileUploadController), 'F:\brandontechs...', Array, true)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(866): CBaseController->renderFile('F:\brandontechs...', Array, true)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(779): CController->renderPartial('viewshot', Array, true)
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(22): CController->render('viewshot', Array)
+#7 [internal function]: FileUploadController->actionViewShot('16')
+#8 F:\brandontechsailor\mapeer_dev\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs(Object(FileUploadController), Array)
+#9 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FileUploadController), Object(ReflectionMethod), Array)
+#10 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#11 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#12 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('viewshot')
+#14 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/view...')
+#15 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#16 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#17 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/viewshot&id=16
+2012/04/10 08:30:09 [error] [exception.CException] exception 'CException' with message 'Property "FileUploadController.breadcrumbs" is not defined.' in F:\brandontechsailor\mapeer_dev\framework\base\CComponent.php:174
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\views\fileupload\viewshot.php(3): CComponent->__set('breadcrumbs', Array)
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CBaseController.php(119): require('F:\brandontechs...')
+#2 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(47): CBaseController->renderInternal('F:\brandontechs...', Array, true)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CBaseController.php(86): YiiDebugViewRenderer->renderFile(Object(FileUploadController), 'F:\brandontechs...', Array, true)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(866): CBaseController->renderFile('F:\brandontechs...', Array, true)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(779): CController->renderPartial('viewshot', Array, true)
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(22): CController->render('viewshot', Array)
+#7 [internal function]: FileUploadController->actionViewShot('16')
+#8 F:\brandontechsailor\mapeer_dev\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs(Object(FileUploadController), Array)
+#9 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FileUploadController), Object(ReflectionMethod), Array)
+#10 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#11 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#12 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('viewshot')
+#14 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/view...')
+#15 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#16 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#17 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/viewshot&id=16
+2012/04/10 08:51:45 [error] [exception.CException] exception 'CException' with message 'Property "FileUploadController.breadcrumbs" is not defined.' in F:\brandontechsailor\mapeer_dev\framework\base\CComponent.php:174
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\views\fileupload\viewshot.php(3): CComponent->__set('breadcrumbs', Array)
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CBaseController.php(119): require('F:\brandontechs...')
+#2 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(47): CBaseController->renderInternal('F:\brandontechs...', Array, true)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CBaseController.php(86): YiiDebugViewRenderer->renderFile(Object(FileUploadController), 'F:\brandontechs...', Array, true)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(866): CBaseController->renderFile('F:\brandontechs...', Array, true)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(779): CController->renderPartial('viewshot', Array, true)
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(20): CController->render('viewshot', Array)
+#7 [internal function]: FileUploadController->actionViewShot('16')
+#8 F:\brandontechsailor\mapeer_dev\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs(Object(FileUploadController), Array)
+#9 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(FileUploadController), Object(ReflectionMethod), Array)
+#10 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#11 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#12 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('viewshot')
+#14 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/view...')
+#15 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#16 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#17 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/viewshot&id=16
+2012/04/10 08:59:09 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (35)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 08:59:09 [warning] [application] Failed to set unsafe attribute "location" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (35)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 08:59:09 [warning] [application] Failed to set unsafe attribute "lat" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (35)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 08:59:09 [warning] [application] Failed to set unsafe attribute "lng" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (35)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/10 08:59:09 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (35)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)

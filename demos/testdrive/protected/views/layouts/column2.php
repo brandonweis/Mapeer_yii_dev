@@ -1,5 +1,6 @@
 <?php $this->beginContent('//layouts/main'); ?>
 <div class="container">
+hello
 	<div class="span-19">
 		<div id="content">
 			<?php echo $content; ?>

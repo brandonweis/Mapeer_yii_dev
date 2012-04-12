@@ -60,6 +60,9 @@
 		<?php echo $form->labelEx($formModel,'location'); ?>
 		<?php echo $form->textField($formModel,'location', array('id'=>'address')); ?>
 		<?php echo $form->error($formModel,'location'); ?>
+		
+		<?php echo $form->hiddenField($formModel,'lat', array('id'=>'lat')); ?>
+		<?php echo $form->hiddenField($formModel,'lng', array('id'=>'lng')); ?>
 	</div>
 	
 	<div class="row">
@@ -74,6 +77,9 @@
 </div><!-- form -->
 
 <div id="test" class="gmap3"></div>
+<div id="scroll" style="overflow-y:scroll; height:500px; width:500px">
+	<div style="height:1000px"></div>
+</div>
 
 <style>
       .gmap3{
@@ -97,7 +103,12 @@
 
 <script>
 	$(function() {
-		
+		$('#scroll').scroll(function(){
+			if ($('#scroll').scrollTop() == $('#scroll').height()){
+			   alert($('#scroll').scrollTop());
+			   alert($('#scroll').height());
+			}
+		});
 // other way to use setDefault
 //$().gmap3('setDefault', {classes:{Marker:MarkerWithLabel }});
 
@@ -140,6 +151,12 @@ $('#test').gmap3(
 
 
 function addMarker(map, location, address){
+	
+	map.gmap3({
+		action: 'clear', 
+		list: ['marker'], 
+	});
+	
 	map.gmap3(
 		{ 
 			action: 'addMarker',
@@ -193,6 +210,12 @@ function getAddress(map, location){
 			
 			$('#address').val(content);
 			
+			
+			// alert(location.latLng.lat());
+			
+			$("#lat").val(location.latLng.lat());
+			$("#lng").val(location.latLng.lng());
+			
 			addMarker(this, location, content);
 		}
 	});
@@ -229,10 +252,15 @@ $('#address').autocomplete({
 					map:{center:true}
 				}
 			);
+			
+			$("#lat").val(item.geometry.location.lat());
+			$("#lng").val(item.geometry.location.lng());
 		}
 	}
 });
-		
+	
+
+	
 		var availableTags = [
 			"ActionScript",
 			"AppleScript",

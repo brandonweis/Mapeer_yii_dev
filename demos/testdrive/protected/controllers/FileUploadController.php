@@ -1,6 +1,6 @@
 <?php
 
-class FileUploadController extends CController
+class FileUploadController extends Controller
 {
 	public function accessRules()
 	{
@@ -9,6 +9,25 @@ class FileUploadController extends CController
 				'users'=>array('*'),
 			),
 		);
+	}
+	
+	public function actionWallFeed(){
+		$model=FileUpload::model()->findAll();
+		if($model===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		
+		$this->render('wallfeed',array(
+			'model'=>$model,
+		));
+	}
+	
+	public function actionViewShot($id=null)
+	{
+		$model = $this->loadModel($id);
+		
+		$this->render('viewshot',array(
+			'model'=>$model,
+		));
 	}
 	
     public function actionUploadImage()
@@ -22,12 +41,19 @@ class FileUploadController extends CController
 		$formModel = new ShotUploadForm;
         if(isset($_POST['ShotUploadForm']))
         {
+			//populate all the post data into the form model for validation
             $formModel->attributes=$_POST['ShotUploadForm'];
 			$formModel->image = CUploadedFile::getInstance($formModel,'image');
 			$formModel->user_id = $_POST['ShotUploadForm']['user_id'];
 			$formModel->description = $_POST['ShotUploadForm']['description'];
+			$formModel->location = $_POST['ShotUploadForm']['location'];
+			$formModel->lat = $_POST['ShotUploadForm']['lat'];
+			$formModel->lng = $_POST['ShotUploadForm']['lng'];
 
-			d($formModel->image);
+			
+			// d($formModel);
+			
+			// d($formModel->image);
 			if($formModel->validate())
 			{
 				$imageExtension = $formModel->image->getExtensionName();
@@ -39,7 +65,7 @@ class FileUploadController extends CController
 							));
 										
 				$imageName =  Yii::app()->request->baseUrl . '/images/' . $imageName . '.' . $imageExtension;
-				d($imageName);	
+				// d($imageName);	
 
 				$description_with_link = "";
 				
@@ -53,7 +79,10 @@ class FileUploadController extends CController
 				$model->description = $formModel->description;
 				$model->description_with_link = $description_with_link;
 				$model->user_str = $user_str;
-				// d($model);
+				$model->lat = $formModel->lat;
+				$model->lng = $formModel->lng;
+				$model->location = $formModel->location;
+
 				if($model->save())
 				{
 					// d(Yii::app()->basePath.'/../images/upload.jpg');
@@ -111,6 +140,8 @@ class FileUploadController extends CController
 			if($temp_contact['user_id'] != NULL)
 				$extract[] = $temp_contact;
 		
+			// type might change if email exist before in database
+			$type = $temp_contact['type'];
 			
 			// d($extract);
 			//replace the contact with links to the contact profile, replace contact together with the "@"
@@ -132,6 +163,7 @@ class FileUploadController extends CController
 		
 	}
 	
+	
 	private function notify_user(&$contact = array()){
 		
 		if($contact['type'] == "email"){
@@ -146,6 +178,12 @@ class FileUploadController extends CController
 				$email_user->save();
 				
 				$user_id = $email_user->id;
+				
+				//if the exisiting email have handler and password and status is not invited, change the contact to using handler and type to handler
+				if($email_user->handler != null AND $email_user->password != null AND $email_user->status != 'invited'){
+					$contact['type'] = "handler";
+					$contact['contact'] = $email_user->handler;
+				}
 			}
 			else{
 			
@@ -176,6 +214,18 @@ class FileUploadController extends CController
 		}
 		
 		$contact['user_id'] = $user_id;
+	}
+	/**
+	 * Returns the data model based on the primary key given in the GET variable.
+	 * If the data model is not found, an HTTP exception will be raised.
+	 * @param integer the ID of the model to be loaded
+	 */
+	public function loadModel($id)
+	{
+		$model=FileUpload::model()->findByPk($id);
+		if($model===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $model;
 	}
 	
 }
