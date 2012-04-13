@@ -292,8 +292,37 @@ $this->breadcrumbs=array(
 
 	<script>
 	$(function() {
-		$( "#user_profile" ).sortable();
+		var index = 1;
+		
+		$("#user_profile > div").each(function(i){
+			$(this).attr('value', index);
+			// alert(i);
+			index++;
+		});
+		
+		$( "#user_profile" ).sortable({
+			revert: true,
+			update: getSequence(),
+		});
 		$( "#user_profile" ).disableSelection();
+		
+		
+		function getSequence(){
+			var index = 0;
+			$("#user_profile > div").each(function(i){
+				id = $(this).attr('value');
+				
+				jsonObj = [];
+				jsonObj.push({index:id});
+				index++;
+			});
+			
+			alert($.parseJSON(jsonObj));
+		}
+		
+		// $('#user_profile li').draggable({
+			// revert: true,
+		// });
 	});
 	</script>
 
