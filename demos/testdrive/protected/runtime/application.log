@@ -3946,3 +3946,135 @@ Stack trace:
 #3 F:\brandontechsailor\mapeer_dev\framework\base\CModule.php(86): CModule->getComponent('db')
 #4 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(14): CModule->__get('db')
 #5 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/uploadimage
+2012/04/17 08:05:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "uploadfile/uploadimage".' in F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php:281
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('uploadfile/uplo...')
+#1 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#3 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=uploadfile/uploadimage
+2012/04/18 04:19:52 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:19:52 [warning] [application] Failed to set unsafe attribute "location" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:19:52 [warning] [application] Failed to set unsafe attribute "lat" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:19:52 [warning] [application] Failed to set unsafe attribute "lng" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:19:52 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:19:52 [warning] [application] Failed to set unsafe attribute "options" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:19:52 [warning] [application] Failed to set unsafe attribute "answer" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:21:44 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:21:44 [warning] [application] Failed to set unsafe attribute "location" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:21:44 [warning] [application] Failed to set unsafe attribute "lat" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:21:44 [warning] [application] Failed to set unsafe attribute "lng" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:21:44 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:21:44 [warning] [application] Failed to set unsafe attribute "options" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:21:44 [warning] [application] Failed to set unsafe attribute "answer" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:22:32 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:22:32 [warning] [application] Failed to set unsafe attribute "location" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:22:32 [warning] [application] Failed to set unsafe attribute "lat" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:22:32 [warning] [application] Failed to set unsafe attribute "lng" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:22:32 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:22:32 [warning] [application] Failed to set unsafe attribute "options" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:22:32 [warning] [application] Failed to set unsafe attribute "answer" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:23:23 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:23:23 [warning] [application] Failed to set unsafe attribute "location" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:23:23 [warning] [application] Failed to set unsafe attribute "lat" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:23:23 [warning] [application] Failed to set unsafe attribute "lng" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:23:23 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:23:23 [warning] [application] Failed to set unsafe attribute "options" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:23:23 [warning] [application] Failed to set unsafe attribute "answer" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:25:15 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:25:15 [warning] [application] Failed to set unsafe attribute "location" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:25:15 [warning] [application] Failed to set unsafe attribute "lat" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:25:15 [warning] [application] Failed to set unsafe attribute "lng" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:25:15 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:25:15 [warning] [application] Failed to set unsafe attribute "options" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:25:15 [warning] [application] Failed to set unsafe attribute "answer" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:26:43 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:26:43 [warning] [application] Failed to set unsafe attribute "location" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:26:43 [warning] [application] Failed to set unsafe attribute "lat" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:26:43 [warning] [application] Failed to set unsafe attribute "lng" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:26:43 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:26:43 [warning] [application] Failed to set unsafe attribute "options" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/04/18 04:26:43 [warning] [application] Failed to set unsafe attribute "answer" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)

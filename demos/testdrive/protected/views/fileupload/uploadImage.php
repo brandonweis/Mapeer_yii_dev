@@ -33,7 +33,7 @@
 
 ?>
 
-<div class="form">
+<div id="shot_form" class="form">
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'upload-form',
 	'enableClientValidation'=>true,
@@ -68,19 +68,31 @@
 	<div class="row">
 		<?php echo $form->hiddenField($formModel,'user_id', array('value'=>Yii::app()->user->id)); ?>
 	</div>
+	
+	<div class="row">
+		<label for="ShotUploadForm_option">Question option 1 (Correct)</label>
+		<textarea id="ShotUploadForm_option_1" name="ShotUploadForm[options][1]" autocomplete="off"></textarea>
+		<input id="ShotUploadForm_option_1" type="hidden" name="ShotUploadForm[answer]" value="yes">
+	</div>
 
-	<div class="row buttons">
+	<a id='add_option' href='#' onclick='return false;'>add more option</a>
+	
+	<div id="submit_button" class="row buttons">
 		<?php echo CHtml::submitButton('Upload'); ?>
 	</div>
+	
+	
 	
 <?php $this->endWidget(); ?>
 </div><!-- form -->
 
 <div id="test" class="gmap3"></div>
-<div id="scroll" style="overflow-y:scroll; height:500px; width:500px">
-	<div style="height:1000px"></div>
-</div>
 
+<?
+/* <div id="scroll" style="overflow-y:scroll; height:500px; width:500px">
+	<div style="height:1000px"></div>
+</div> */
+?>
 <style>
       .gmap3{
         margin: 20px auto;
@@ -101,14 +113,40 @@
      }
 </style>
 
-<script>
+<script type="text/javascript">
+var option_count = 2;
+
+		
+function addOption(){
+	var body = "<div class='row'>"+
+			"<label for='ShotUploadForm_option'>Question option "+option_count+"</label>"+
+			"<textarea id='ShotUploadForm_option_"+option_count+"' name='ShotUploadForm[options]["+option_count+"]' autocomplete='off'></textarea>"+
+			"<input id='ShotUploadForm_option_"+option_count+"' type='hidden' name='ShotUploadForm[answer]' value='yes'>"+
+		"</div>";
+			// alert('hello');
+			
+	// $('#add_option').remove();
+	$("#upload-form").append(body);
+	$('#upload-form').append($('#add_option'));
+	$('#add_option').after($('#submit_button'));
+	option_count++;
+}
+
 	$(function() {
+		
+		// $('#upload-form').append("<a id='add_option' href='#' onclick='return false;'>add more option</a>");
+		
+		$('#add_option').click(function(){
+			addOption();
+		});
+		
 		$('#scroll').scroll(function(){
 			if ($('#scroll').scrollTop() == $('#scroll').height()){
-			   alert($('#scroll').scrollTop());
+			   // alert($('#scroll').scrollTop());
 			   alert($('#scroll').height());
 			}
 		});
+
 // other way to use setDefault
 //$().gmap3('setDefault', {classes:{Marker:MarkerWithLabel }});
 

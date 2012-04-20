@@ -12,6 +12,7 @@ class FileUploadController extends Controller
 	}
 	
 	public function actionWallFeed(){
+		// $this->layout = true;
 		$model=FileUpload::model()->findAll();
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
@@ -51,6 +52,7 @@ class FileUploadController extends Controller
 			$formModel->lng = $_POST['ShotUploadForm']['lng'];
 
 			
+			// exit;
 			// d($formModel);
 			
 			// d($formModel->image);
@@ -89,6 +91,28 @@ class FileUploadController extends Controller
 					$formModel->image->saveAs($_SERVER['DOCUMENT_ROOT'] . $imageName);
 					// redirect to success page
 				}
+				
+				$question_options = $_POST['ShotUploadForm']['options'];
+			
+				// d($question_options);
+				// $question_option = new QuestionOption;
+				
+				foreach($question_options as $index => $option){
+					// d($option);
+					if($option == "" || empty($option))
+						continue;
+					
+					$question_option = new QuestionOption;
+					
+					$question_option->shot_id = $model->id; //get the saved shot id
+					$question_option->option = $option;
+					$question_option->answer = ($index == 1) ? "yes" : "no";
+					
+					// d($question_option);
+					
+					$question_option->save();
+				}
+				
 			}
         }
         $this->render('uploadimage', array('formModel'=>$formModel));
