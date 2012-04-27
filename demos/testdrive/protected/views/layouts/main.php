@@ -29,7 +29,10 @@
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/autocomplete/jquery-autocomplete.min.js" /></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/gmap3/demo/external/markerwithlabel.js" /></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/masonry/jquery.masonry.min.js" /></script>
-	
+	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/zoomooz/jquery.zoomooz.min.js" /></script>
+	<?
+/* 	
+ */	?>
 
 </head>
 
