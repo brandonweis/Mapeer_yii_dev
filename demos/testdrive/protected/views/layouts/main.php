@@ -19,9 +19,11 @@
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/jquery/demos/demos.css" />
 	
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/autocomplete/jquery-autocomplete.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/pageslide/jquery.pageslide.css" />
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
 	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.5/jquery-ui.min.js"></script>
 	
@@ -29,9 +31,12 @@
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/autocomplete/jquery-autocomplete.min.js" /></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/gmap3/demo/external/markerwithlabel.js" /></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/masonry/jquery.masonry.min.js" /></script>
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/zoomooz/jquery.zoomooz.min.js" /></script>
+	
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/nailthumb/jquery.nailthumb.1.0.js" /></script>
 	<?
 /* 	
+	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/pageslide/jquery.pageslide.min.js" /></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/zoomooz/jquery.zoomooz.min.js" /></script>
  */	?>
 
 </head>

@@ -4078,3 +4078,47 @@ in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
 2012/04/18 04:26:43 [warning] [application] Failed to set unsafe attribute "answer" of "ShotUploadForm".
 in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
 in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/05/02 11:06:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:477
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(262): CController->missingAction('view')
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('view')
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/view')
+#3 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#5 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/view
+2012/05/02 11:07:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:477
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(262): CController->missingAction('view')
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('view')
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/view')
+#3 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#5 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/view&id=28
+2012/05/02 11:07:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:477
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(262): CController->missingAction('view')
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('view')
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/view')
+#3 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#5 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/view&id=27
+2012/05/03 04:10:09 [error] [exception.CException] exception 'CException' with message 'Please specify the "data" property.' in F:\brandontechsailor\mapeer_dev\framework\zii\widgets\CDetailView.php:135
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CBaseController.php(140): CDetailView->init()
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CBaseController.php(165): CBaseController->createWidget('zii.widgets.CDe...', Array)
+#2 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\views\fileupload\test.php(26): CBaseController->widget('zii.widgets.CDe...', Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CBaseController.php(119): require('F:\brandontechs...')
+#4 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\extensions\yii-debug-toolbar\components\YiiDebugViewRenderer.php(47): CBaseController->renderInternal('F:\brandontechs...', NULL, true)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CBaseController.php(86): YiiDebugViewRenderer->renderFile(Object(FileUploadController), 'F:\brandontechs...', NULL, true)
+#6 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(866): CBaseController->renderFile('F:\brandontechs...', NULL, true)
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(779): CController->renderPartial('test', NULL, true)
+#8 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(28): CController->render('test')
+#9 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(50): FileUploadController->actionTest()
+#10 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#11 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#12 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('test')
+#14 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/test')
+#15 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#16 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#17 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/test

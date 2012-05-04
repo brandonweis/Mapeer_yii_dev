@@ -24,6 +24,12 @@ class FileUpload extends CActiveRecord
         return array();
     }
 	
+	public function relations(){
+		return array(
+		'options' => array(self::HAS_MANY, 'QuestionOption', 'shot_id'),
+		);
+	}
+	
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);

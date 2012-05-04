@@ -17,9 +17,19 @@ class FileUploadController extends Controller
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		
+		// foreach($model as $temp){
+			// d($temp->options);
+		// }
+		
 		$this->render('wallfeed',array(
 			'model'=>$model,
 		));
+	}
+	
+	public function actionTest()
+    {
+		$this->layout = false;
+		$this->render('test');
 	}
 	
 	public function actionViewShot($id=null)

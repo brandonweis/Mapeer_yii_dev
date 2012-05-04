@@ -25,3 +25,6 @@ $this->breadcrumbs=array(
 	),
 )); ?>
 </div><!-- form -->
+
+
+<img src="<?=$model->image?>"/>

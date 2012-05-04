@@ -23,6 +23,12 @@ class QuestionOption extends CActiveRecord
 		);
     }
 	
+	public function relations(){
+		return array(
+		'shot' => array(self::BELONGS_TO, 'FileUpload', 'shot_id'),
+		);
+	}
+	
 	public static function model($className=__CLASS__)
 	{
 		return parent::model($className);
