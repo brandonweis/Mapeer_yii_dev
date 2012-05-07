@@ -1,79 +1,34 @@
-<?php
-$this->pageTitle=Yii::app()->name . ' - Profile';
-$this->breadcrumbs=array(
-	'Profile',
-);
-?>
+
 <script type="text/javascript">
          jQuery(function($) {
         $(".row .column:odd").addClass("odd");
         $(".row .column:even").addClass("even");
       });
 </script>
-	
-	
-<div id="header2">
-  <nav>
-    <ul>
-      <li> <a href=index.html>MAPEER</a> </li> 
-      <li> <a href=shots.html>All Shots</a> </li> 
-      <li> <a href=profile.html>profile</a> </li> 
-      <li> <a href=network.html>network</a> </li> 
-      <li> <a href=lists.html>Lists</a> </li> 
-      <li class="navi-search"><form>Search <input type="text" name="search" value="search a keyword or a location"/></form></li>
-    </ul>
-  </nav>
-
-  <div id="login">
-    <div id="login-userpic"><img src=<?php echo Yii::app()->request->baseUrl; ?>/images/mapeer/0002b.jpg></div>
-   <p>Welcome back <br><a href="">PineappleSpongeCakeDude</a></p>
-  </div>
-  
-
-
-</div>
-<h1>Profile</h1>
 
 <div class="form">
 	<?php 
 	// Sorry for bad shifting, it's not my fault ...
 	 
-		echo CHtml::ajaxSubmitButton('Follow', ''/* CHtml::normalizeUrl(array('user/follow')) */, 
-		 array(
-		   'data'=>'js:jQuery(this).parents("form").serialize()+"&isAjaxRequest=1"',               
-		   'success'=>
-					  'function(data){
-							$("#searchResult").html(data);
-							$("#searchResult").show();
-							return false;
-					   }'    
+		// echo CHtml::ajaxSubmitButton('Follow', ''/* CHtml::normalizeUrl(array('user/follow')) */, 
+		 // array(
+		   // 'data'=>'js:jQuery(this).parents("form").serialize()+"&isAjaxRequest=1"',               
+		   // 'success'=>
+					  // 'function(data){
+							// $("#searchResult").html(data);
+							// $("#searchResult").show();
+							// return false;
+					   // }'    
 	 
-		 ), 
-		 array(
-			'id'=>'ajaxSubmit', 
-			'name'=>'ajaxSubmit'
-		 )); 
+		 // ), 
+		 // array(
+			// 'id'=>'ajaxSubmit', 
+			// 'name'=>'ajaxSubmit'
+		 // )); 
 	?>
-
-
-<h1>View User #<?php echo $model->id; ?></h1>
-
-<?php $this->widget('zii.widgets.CDetailView', array(
-	'data'=>$model,
-	'attributes'=>array(
-		'id',
-		'username',
-		'password',
-		'email',
-	),
-)); ?>
 </div><!-- form -->
 
-
-
-<h1>Profile : Everything you'd like to know about PineappleSpongeCakeDude</h1>
-
-<div id="user_profile">
+<div id="user_profile" style="width: 1120px; position:absolute; left:490px; background-color:#F5FFEA">
 
 	  <div class="profile">
 		<div class="pics"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/mapeer/1.jpg"></div>
@@ -104,7 +59,7 @@ $this->breadcrumbs=array(
 
 	  <div class="profile-text">
 		<p>
-		  <div class="title">I am</div>
+		  <div class="title">I am <? echo (!empty($model->handler)) ? $model->handler : $model->email?></div>
 		  One heck of an oddball. </br></br>
 
 		  I won't call myself a hardcore backpacker, I'm just a hippie wanna be that travels to places whenever AirAsia decides to give us some discounted air tickets. Haha! Nice to meet you! :)
@@ -289,10 +244,13 @@ $this->breadcrumbs=array(
 	</div>
 </div>
 
+<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/pageslide/jquery.pageslide.js" /></script>
 
-	<script>
+	<script type="text/javascript">
 	$(function() {
 		var index = 1;
+		
+		
 		
 		$("#user_profile > div").each(function(i){
 			$(this).attr('value', index);
@@ -317,7 +275,7 @@ $this->breadcrumbs=array(
 				index++;
 			});
 			
-			alert($.parseJSON(jsonObj));
+			// alert($.parseJSON(jsonObj));
 		}
 		
 		// $('#user_profile li').draggable({

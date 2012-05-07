@@ -1,4 +1,4 @@
-<div id="masonry_container" style="background-color:#FFF200; padding:5px">
+<div id="masonry_container" style="background-color:#F5FFEA; padding:5px">
 
 <?
 
@@ -45,7 +45,7 @@ foreach($model as $index => $row){
 		margin: 5px;
 		padding: 5px;
 		float: left;
-		background-color:#6CC28B;
+		background-color:#ffffff;
 	}
 	
 	.shot2x2{
@@ -54,7 +54,7 @@ foreach($model as $index => $row){
 		margin: 5px;
 		padding: 5px;
 		float: left;
-		background-color:#6CC28B;
+		background-color:#ffffff;
 	}
 	
 	.shot2x4{
@@ -122,7 +122,7 @@ foreach($model as $index => $row){
 		});
 		
 		//each shot is able to invoke pageslide
-		$(".pageslide").pageslide({direction: 'right'});
+		$(".pageslide").pageslide({ direction: 'left'});
 	  $('#masonry_container').masonry({
 		// options
 		itemSelector : '.boxx',
@@ -133,7 +133,7 @@ foreach($model as $index => $row){
 		isFitWidthBooleanfalse : false
 	  });
 	  
-	  $('.boxx').click(function(evt){
+	  $('this').click(function(evt){
 		
 		$(this).zoomTo({
 			targetsize: 0.8, 

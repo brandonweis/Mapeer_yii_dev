@@ -4122,3 +4122,22 @@ Stack trace:
 #15 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
 #16 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
 #17 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/test
+2012/05/07 07:47:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php:191
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php(73): UserController->loadModel('Guest')
+#1 [internal function]: UserController->actionProfile('Guest')
+#2 F:\brandontechsailor\mapeer_dev\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\mapeer_dev\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(283): CFilterChain->run()
+#11 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('profile')
+#13 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('user/profile')
+#14 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#15 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#16 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=user/profile&id=Guest

@@ -82,7 +82,9 @@ input:focus, textarea:focus {
   -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 0px 8px;
 }
 
-
+.mainmenu ul{
+	list-style-type: none;
+}
 
 /* Wrapper */
 #wrapper {
@@ -101,6 +103,7 @@ border: 0px solid;
 width: 800px;
 margin: auto;
 margin-bottom: 0px;
+/* position: fixed; */
 }
 
 
@@ -298,7 +301,7 @@ background :#E7E8E9 ;
 padding: 0px; 
 margin: 15px;
 float: left;
-position: relative;
+/* position: relative; */
 overflow: hidden;}
 
 .profile-text {
@@ -309,7 +312,7 @@ background :#E7E8E9 ;
 padding: 10px; 
 margin: 15px;
 float: left;
-position: relative;
+/* position: relative; */
 overflow: hidden;}
 
 .profile-userpic {
@@ -320,7 +323,7 @@ background :#8A8C8E ;
 padding: 0px; 
 margin: 15px;
 float: left;
-position: relative;
+/* position: relative; */
 overflow: hidden;}
 
 .profile-mapeers_upserpics {

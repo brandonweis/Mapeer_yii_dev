@@ -33,9 +33,9 @@
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/masonry/jquery.masonry.min.js" /></script>
 	
 <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/nailthumb/jquery.nailthumb.1.0.js" /></script>
+	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/pageslide/jquery.pageslide.min.js" /></script>
 	<?
 /* 	
-	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/pageslide/jquery.pageslide.min.js" /></script>
 	<script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/zoomooz/jquery.zoomooz.min.js" /></script>
  */	?>
 
@@ -43,23 +43,31 @@
 
 <body>
 
-<div class="container" id="page">
+<div class="container" id="page" style="width:1240px">
 
-	<div id="header">
-		<div id="logo"><?php echo CHtml::encode(Yii::app()->name); ?></div>
-	</div><!-- header -->
 
-	<div id="mainmenu">
-		<?php $this->widget('zii.widgets.CMenu',array(
-			'items'=>array(
-				array('label'=>'Home', 'url'=>array('/site/index')),
-				array('label'=>'About', 'url'=>array('/site/page', 'view'=>'about')),
-				array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest),
-				array('label'=>'Register', 'url'=>array('/site/register'), 'visible'=>Yii::app()->user->isGuest)
-			),
-		)); ?>
+	<div id="mainmenu" style="width:200px; float:left; position: fixed; background-color:#F5FFEA; padding:5px; margin-right:10px">
+
+		<?if(!Yii::app()->user->isGuest){?>
+		<span><? echo CHtml::link('Profile',array('user/profile', 'id'=>Yii::app()->user->id, array('class'=>'pageslide_left'))); ?></span>
+		<hr/>
+		<span><? echo CHtml::link('Lists',array('user/profile', 'id'=>Yii::app()->user->id, array('class'=>'pageslide_left'))); ?></span>
+		<hr/>
+		<span><? echo CHtml::link('Followers',array('user/profile', 'id'=>Yii::app()->user->id, array('class'=>'pageslide_left'))); ?></span>
+		<hr/>
+		<span><? echo CHtml::link('Following',array('user/profile', 'id'=>Yii::app()->user->id, array('class'=>'pageslide_left'))); ?></span>
+		<hr/>
+		<span><? echo CHtml::link('Make A Shot',array('fileupload/uploadimage'), array('class'=>'pageslide_left')); ?></span>
+		<hr/>
+		<span><? echo CHtml::link('Logout ('.Yii::app()->user->name.')',array('user/profile', 'id'=>Yii::app()->user->id), array('visible'=>!Yii::app()->user->isGuest)); ?></span>
+		<hr/>
+		<?}?>
+		<span style="font-size:8px">
+		Copyright &copy; <?php echo date('Y'); ?> by My Companyss.<br/>
+		All Rights Reserved.<br/>
+		<?php echo Yii::powered(); ?>
+		</span>
+		
 	</div><!-- mainmenu -->
 	<?php if(isset($this->breadcrumbs)):?>
 		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
@@ -69,14 +77,19 @@
 
 	<?php echo $content; ?>
 
-	
-	<div id="footer">
-		Copyright &copy; <?php echo date('Y'); ?> by My Companyss.<br/>
-		All Rights Reserved.<br/>
-		<?php echo Yii::powered(); ?>
-	</div><!-- footer -->
+
 
 </div><!-- page -->
 
+	<script type="text/javascript">
+	$(function() {	
+		$(".pageslide_left").pageslide({ direction: 'right'});
+	});
+	</script>
+<style>
+#mainmenu ul{
+	list-style-type:none
+}
+</style>
 </body>
 </html>
