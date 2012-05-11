@@ -4141,3 +4141,53 @@ Stack trace:
 #14 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
 #15 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
 #16 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=user/profile&id=Guest
+2012/05/09 12:27:07 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (59)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/05/09 12:27:07 [warning] [application] Failed to set unsafe attribute "location" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (59)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/05/09 12:27:07 [warning] [application] Failed to set unsafe attribute "lat" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (59)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/05/09 12:27:07 [warning] [application] Failed to set unsafe attribute "lng" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (59)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/05/09 12:27:07 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (59)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/05/09 12:27:07 [warning] [application] Failed to set unsafe attribute "options" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (59)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/05/09 12:27:07 [warning] [application] Failed to set unsafe attribute "answer" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (59)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/05/09 12:28:57 [warning] [application] Failed to set unsafe attribute "description" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (59)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/05/09 12:28:57 [warning] [application] Failed to set unsafe attribute "location" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (59)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/05/09 12:28:57 [warning] [application] Failed to set unsafe attribute "lat" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (59)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/05/09 12:28:57 [warning] [application] Failed to set unsafe attribute "lng" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (59)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/05/09 12:28:57 [warning] [application] Failed to set unsafe attribute "user_id" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (59)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/05/09 12:28:57 [warning] [application] Failed to set unsafe attribute "options" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (59)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/05/09 12:28:57 [warning] [application] Failed to set unsafe attribute "answer" of "ShotUploadForm".
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (59)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/05/09 12:34:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "view".' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:477
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(262): CController->missingAction('view')
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('view')
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/view')
+#3 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#5 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/view&id=28

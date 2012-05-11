@@ -75,6 +75,9 @@ box-shadow: rgba(0,0,0, 0.1) 0px 0px 1px;
 -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 1px;
 }
 
+.masonry_container{
+	width: 590px;
+}
 
 input:hover, textarea:hover, 
 input:focus, textarea:focus { 

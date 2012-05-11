@@ -5,9 +5,9 @@ $this->breadcrumbs=array(
 );
 ?>
 
-<h1>Shot</h1>
 
 <div class="form">
+<h1>Shot</h1>
 
 
 

@@ -41,39 +41,36 @@
 
 </head>
 
-<body>
+<body style="background-color:#F0F0F0">
 
-<div class="container" id="page" style="width:1240px">
-
-
-	<div id="mainmenu" style="width:200px; float:left; position: fixed; background-color:#F5FFEA; padding:5px; margin-right:10px">
+<div class="container" id="page" style="/* width:1240px */">
+	<?echo $_GET['iframe'];?>
+	<?if(!(isset($_GET['iframe']) && $_GET['iframe'])){?>
+	<div id="mainmenu" style="width:200px; float:left; position: fixed; background-color:#F5FFEA; padding:5px; margin-right:0px; height:100%;">
 
 		<?if(!Yii::app()->user->isGuest){?>
-		<span><? echo CHtml::link('Profile',array('user/profile', 'id'=>Yii::app()->user->id, array('class'=>'pageslide_left'))); ?></span>
-		<hr/>
-		<span><? echo CHtml::link('Lists',array('user/profile', 'id'=>Yii::app()->user->id, array('class'=>'pageslide_left'))); ?></span>
-		<hr/>
-		<span><? echo CHtml::link('Followers',array('user/profile', 'id'=>Yii::app()->user->id, array('class'=>'pageslide_left'))); ?></span>
-		<hr/>
-		<span><? echo CHtml::link('Following',array('user/profile', 'id'=>Yii::app()->user->id, array('class'=>'pageslide_left'))); ?></span>
-		<hr/>
-		<span><? echo CHtml::link('Make A Shot',array('fileupload/uploadimage'), array('class'=>'pageslide_left')); ?></span>
-		<hr/>
-		<span><? echo CHtml::link('Logout ('.Yii::app()->user->name.')',array('user/profile', 'id'=>Yii::app()->user->id), array('visible'=>!Yii::app()->user->isGuest)); ?></span>
+		<div><? echo CHtml::link('Profile',array('user/profile', 'id'=>Yii::app()->user->id, array('class'=>'pageslide_left'))); ?></div>
+		<br/>
+		<div><? echo CHtml::link('Lists',array('user/profile', 'id'=>Yii::app()->user->id, array('class'=>'pageslide_left'))); ?></div>
+		<br/>
+		<div><? echo CHtml::link('Followers',array('user/profile', 'id'=>Yii::app()->user->id, array('class'=>'pageslide_left'))); ?></div>
+		<br/>
+		<div><? echo CHtml::link('Following',array('user/profile', 'id'=>Yii::app()->user->id, array('class'=>'pageslide_left'))); ?></div>
+		<br/>
+		<div><? echo CHtml::link('Make A Shot',array('fileupload/uploadimage', 'iframe'=>1), array('class'=>'pageslide_left')); ?></div>
+		<br/>
+		<div>
+		<? echo CHtml::link('Logout ('.Yii::app()->user->name.')',array('user/profile', 'id'=>Yii::app()->user->id), array('visible'=>!Yii::app()->user->isGuest)); ?></div>
 		<hr/>
 		<?}?>
-		<span style="font-size:8px">
+		<div style="font-size:8px">
 		Copyright &copy; <?php echo date('Y'); ?> by My Companyss.<br/>
 		All Rights Reserved.<br/>
 		<?php echo Yii::powered(); ?>
-		</span>
+		</div>
 		
 	</div><!-- mainmenu -->
-	<?php if(isset($this->breadcrumbs)):?>
-		<?php $this->widget('zii.widgets.CBreadcrumbs', array(
-			'links'=>$this->breadcrumbs,
-		)); ?><!-- breadcrumbs -->
-	<?php endif?>
+	<?}?>
 
 	<?php echo $content; ?>
 

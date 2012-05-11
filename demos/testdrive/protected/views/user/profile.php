@@ -28,7 +28,7 @@
 	?>
 </div><!-- form -->
 
-<div id="user_profile" style="width: 1120px; position:absolute; left:490px; background-color:#F5FFEA">
+<div id="user_profile" style="width: 1120px; position:absolute; left:652px; background-color:#FFFFFF">
 
 	  <div class="profile">
 		<div class="pics"><img src="<?php echo Yii::app()->request->baseUrl; ?>/images/mapeer/1.jpg"></div>

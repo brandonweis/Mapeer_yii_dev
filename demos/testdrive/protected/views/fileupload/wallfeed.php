@@ -1,9 +1,11 @@
-<div id="masonry_container" style="background-color:#F5FFEA; padding:5px">
+
+<div id="masonry_container" style="background-color:#FFFFFF; padding:20px; width:560px;left: 210px;">
 
 <?
 
 foreach($model as $index => $row){
-	if($index % 2){
+	// if($index % 2){
+	if(true){
 		$box_class = "shot";
 		$image_class = "image1x1";
 		$image_container = "image_container1x1";
@@ -18,7 +20,7 @@ foreach($model as $index => $row){
 ?>
 
 	<div class="boxx <?=$box_class?>" onmousedown="return true">
-		<a class="pageslide" target="_blank" href="/mapeer_dev/demos/testdrive/index.php?r=fileupload/viewshot&id=<?=$row->id?>">
+		<a class="pageslide" target="_blank" href="/mapeer_dev/demos/testdrive/index.php?r=fileupload/viewshot&id=<?=$row->id?>&iframe=1">
 			<div class="image_container <?=$image_container?>">
 				<img class="image <?//=$image_class?>" src="<?=$row->image?>"/>
 			</div>
@@ -39,10 +41,19 @@ foreach($model as $index => $row){
 <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/jquery.lazyload.js" /></script>
 <script type="text/javascript" src="<?php echo Yii::app()->request->baseUrl; ?>/jsplugin/nailthumb/jquery.nailthumb.1.0.js" /></script>
 <style>
-	.shot{
+/* 	.shot{
 		width: 220px;
 		height: 220px;
 		margin: 5px;
+		padding: 5px;
+		float: left;
+		background-color:#ffffff;
+	} */
+	
+	.shot{
+		width: 220px;
+		height: 220px;
+		margin: 20px;
 		padding: 5px;
 		float: left;
 		background-color:#ffffff;
@@ -92,7 +103,7 @@ foreach($model as $index => $row){
 	}
 	
 	.boxx:hover {
-		-webkit-transform: scale(1.25);
+		/* -webkit-transform: scale(1.25);
 		-moz-transform: scale(1.25);
 		position: relative;
 		z-index: 5;
@@ -100,7 +111,7 @@ foreach($model as $index => $row){
 		//smooth transforming
 		-webkit-transition: all 0.2s ease-in;
 		-moz-transition: all 0.2s ease-in;
-		-ms-transition: all 0.2s ease-in;
+		-ms-transition: all 0.2s ease-in; */
 	}
 
 </style>

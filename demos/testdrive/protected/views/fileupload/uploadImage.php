@@ -13,7 +13,6 @@
 // );
 ?>
 
-<h1>Upload Shot</h1>
 
 <?php 
 
@@ -33,7 +32,8 @@
 
 ?>
 
-<div id="shot_form" class="form">
+<div id="shot_form" class="form" style="background-color: white; left: 652px; <?echo (isset($_GET['iframe']) && $_GET['iframe'])? "" : "position: absolute;";?> width: 500px; height: 100%; padding: 10px;">
+<h1>Upload Shot</h1>
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'upload-form',
 	'enableClientValidation'=>true,
@@ -55,6 +55,8 @@
 		<?php echo $form->textArea($formModel,'description'); ?>
 		<?php echo $form->error($formModel,'description'); ?>
 	</div>
+
+	<div id="test" class="gmap3"></div>
 	
 	<div class="row">
 		<?php echo $form->labelEx($formModel,'location'); ?>
@@ -86,7 +88,6 @@
 <?php $this->endWidget(); ?>
 </div><!-- form -->
 
-<div id="test" class="gmap3"></div>
 
 <?
 /* <div id="scroll" style="overflow-y:scroll; height:500px; width:500px">
@@ -362,6 +363,9 @@ $('#address').autocomplete({
 				}
 			});
 	});
+	
+	// detect a page is loaded in iframe using javascript
+	// var isInIFrame = (window.location != window.parent.location) ? true : false;
 </script>
 	
 <style type="text/css">

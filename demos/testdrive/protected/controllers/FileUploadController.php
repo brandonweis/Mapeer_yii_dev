@@ -2,6 +2,8 @@
 
 class FileUploadController extends Controller
 {
+	public $layout='//layouts/main';
+	
 	public function accessRules()
 	{
 		return array(
@@ -43,6 +45,7 @@ class FileUploadController extends Controller
 	
     public function actionUploadImage()
     {
+		// d($_GET['iframe']);
 		// $user_str = "";
 		// $user_str = json_encode($this->extract_by_character());
 		// d($user_str$user_str = "";
@@ -125,7 +128,7 @@ class FileUploadController extends Controller
 				
 			}
         }
-        $this->render('uploadimage', array('formModel'=>$formModel));
+        $this->render('uploadimage', array('formModel'=>$formModel, 'iframe'=>$_GET['iframe']));
     }
 	
 	private function extract_by_character($text="@crystal wanna travel? @brandon@techsailor.com @kokweiong@gmail.com", &$description_with_link, $character="@"){
