@@ -7,7 +7,7 @@ class FileUploadController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // deny all users
+			array('allow',  // allow all users
 				'users'=>array('*'),
 			),
 		);
@@ -32,6 +32,50 @@ class FileUploadController extends Controller
     {
 		$this->layout = false;
 		$this->render('test');
+	}
+	
+	public function actionLike()
+    {
+		$this->layout = false;
+		$shot_id = 1;
+		
+		$user_id = Yii::app()->user->id;
+		$data_type = "like";
+		
+		$like = UserData::model()->find('user_id=:user_id AND data_type=:data_type', array(':user_id'=>$user_id, ':data_type'=>$data_type));
+
+		d($like->data);
+
+		if(!empty($like->data)){
+			$likeStr = json_decode($like->data);
+			
+			$user_data = $like;
+			// return;
+		}
+		else{
+			$user_data = new UserData;
+			
+		}
+		
+		$temp->shot_id = $shot_id;
+		$temp->created_date = date(DATE_ATOM);
+		$likeStr[] = $temp;
+		
+		d($likeStr);
+		
+		$likeStr = json_encode($likeStr);
+
+		$user_data->user_id = $user_id;
+		$user_data->data_type = "like";
+		$user_data->data = $likeStr;
+		$user_data->created = date(DATE_ATOM);
+		
+		d($user_data);
+		
+		return $user_data->save();
+		
+		
+		// $this->render('test');
 	}
 	
 	public function actionViewShot($id=null)

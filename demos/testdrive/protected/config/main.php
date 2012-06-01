@@ -94,10 +94,10 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=testdrive',
+			'connectionString' => 'mysql:host=techsailor.com;dbname=brandonplayground',
 			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '',
+			'username' => 'brandon1986',
+			'password' => 'playground!123',
 			'charset' => 'utf8',
 			'tablePrefix' => '',
 		),

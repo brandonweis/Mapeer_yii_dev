@@ -4191,3 +4191,353 @@ Stack trace:
 #3 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
 #4 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
 #5 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/view&id=28
+2012/06/01 03:25:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php:191
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\UserController.php(73): UserController->loadModel('24')
+#1 [internal function]: UserController->actionProfile('24')
+#2 F:\brandontechsailor\mapeer_dev\framework\web\actions\CAction.php(104): ReflectionMethod->invokeArgs(Object(UserController), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(UserController), Object(ReflectionMethod), Array)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(1144): CFilter->filter(Object(CFilterChain))
+#8 F:\brandontechsailor\mapeer_dev\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 F:\brandontechsailor\mapeer_dev\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(283): CFilterChain->run()
+#11 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('profile')
+#13 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('user/profile')
+#14 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#15 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#16 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=user/profile&id=24
+2012/06/01 03:26:08 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:328
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('answer')
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('question/answer')
+#5 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#7 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=question/answer&id=27&ids=3
+2012/06/01 03:29:52 [error] [php] include(Question_option.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (F:\brandontechsailor\mapeer_dev\framework\YiiBase.php:421)
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\QuestionController.php(25): spl_autoload_call()
+#1 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(50): QuestionController->actionAnswer()
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams()
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): QuestionController->runAction()
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): QuestionController->runActionWithFilters()
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): QuestionController->run()
+#6 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#7 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#8 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CWebApplication->run()
+REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=question/answer
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\QuestionController.php (25)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/06/01 03:30:46 [error] [exception.CException] exception 'CException' with message 'Property "CDbCriteria.shot_id" is not defined.' in F:\brandontechsailor\mapeer_dev\framework\base\CComponent.php:174
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\db\schema\CDbCriteria.php(153): CComponent->__set('shot_id', 27)
+#1 F:\brandontechsailor\mapeer_dev\framework\db\schema\CDbCommandBuilder.php(460): CDbCriteria->__construct(Array)
+#2 F:\brandontechsailor\mapeer_dev\framework\db\ar\CActiveRecord.php(1395): CDbCommandBuilder->createCriteria(Array, Array)
+#3 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\QuestionController.php(25): CActiveRecord->find(Array)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(50): QuestionController->actionAnswer()
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#6 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('answer')
+#9 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('question/answer')
+#10 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#12 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=question/answer
+2012/06/01 03:31:45 [error] [exception.CException] exception 'CException' with message 'QuestionController cannot find the requested view "index".' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:875
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(779): CController->renderPartial('index', NULL, true)
+#1 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\QuestionController.php(30): CController->render('index')
+#2 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(50): QuestionController->actionAnswer()
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('answer')
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('question/answer')
+#8 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#10 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=question/answer
+2012/06/01 03:31:46 [error] [exception.CException] exception 'CException' with message 'QuestionController cannot find the requested view "index".' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:875
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(779): CController->renderPartial('index', NULL, true)
+#1 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\QuestionController.php(30): CController->render('index')
+#2 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(50): QuestionController->actionAnswer()
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('answer')
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('question/answer')
+#8 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#9 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#10 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=question/answer
+2012/06/01 08:19:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:328
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('like')
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/like')
+#5 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#7 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+2012/06/01 08:20:14 [error] [php] date() expects at least 1 parameter, 0 given (F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php:41)
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams()
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): FileUploadController->runAction()
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): FileUploadController->runActionWithFilters()
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): FileUploadController->run()
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#5 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CWebApplication->run()
+REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (41)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/06/01 08:25:21 [error] [php] Object of class stdClass could not be converted to string (F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php:45)
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): FileUploadController->runAction()
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): FileUploadController->runActionWithFilters()
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): FileUploadController->run()
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#4 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#5 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CWebApplication->run()
+REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (45)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/06/01 09:56:06 [error] [php] include(data.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (F:\brandontechsailor\mapeer_dev\framework\YiiBase.php:421)
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\validators\CValidator.php(166): import()
+#1 F:\brandontechsailor\mapeer_dev\framework\base\CModel.php(283): createValidator()
+#2 F:\brandontechsailor\mapeer_dev\framework\base\CModel.php(257): UserData->createValidators()
+#3 F:\brandontechsailor\mapeer_dev\framework\base\CModel.php(151): UserData->getValidators()
+#4 F:\brandontechsailor\mapeer_dev\framework\db\ar\CActiveRecord.php(780): UserData->validate()
+#5 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(64): UserData->save()
+#6 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(50): FileUploadController->actionLike()
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams()
+#8 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): FileUploadController->runAction()
+#9 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): FileUploadController->runActionWithFilters()
+#10 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): FileUploadController->run()
+#11 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#12 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CWebApplication->run()
+REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (64)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/06/01 10:56:42 [error] [php] include(data.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (F:\brandontechsailor\mapeer_dev\framework\YiiBase.php:421)
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\validators\CValidator.php(166): import()
+#1 F:\brandontechsailor\mapeer_dev\framework\base\CModel.php(283): createValidator()
+#2 F:\brandontechsailor\mapeer_dev\framework\base\CModel.php(257): UserData->createValidators()
+#3 F:\brandontechsailor\mapeer_dev\framework\base\CModel.php(151): UserData->getValidators()
+#4 F:\brandontechsailor\mapeer_dev\framework\db\ar\CActiveRecord.php(780): UserData->validate()
+#5 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(64): UserData->save()
+#6 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(50): FileUploadController->actionLike()
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams()
+#8 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): FileUploadController->runAction()
+#9 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): FileUploadController->runActionWithFilters()
+#10 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): FileUploadController->run()
+#11 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#12 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CWebApplication->run()
+REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (64)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/06/01 10:57:16 [error] [php] include(data.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (F:\brandontechsailor\mapeer_dev\framework\YiiBase.php:421)
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\validators\CValidator.php(166): import()
+#1 F:\brandontechsailor\mapeer_dev\framework\base\CModel.php(283): createValidator()
+#2 F:\brandontechsailor\mapeer_dev\framework\base\CModel.php(257): UserData->createValidators()
+#3 F:\brandontechsailor\mapeer_dev\framework\base\CModel.php(151): UserData->getValidators()
+#4 F:\brandontechsailor\mapeer_dev\framework\db\ar\CActiveRecord.php(780): UserData->validate()
+#5 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(66): UserData->save()
+#6 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(50): FileUploadController->actionLike()
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams()
+#8 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): FileUploadController->runAction()
+#9 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): FileUploadController->runActionWithFilters()
+#10 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): FileUploadController->run()
+#11 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#12 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#13 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CWebApplication->run()
+REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (66)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/06/01 11:03:18 [error] [exception.CException] exception 'CException' with message 'User and its behaviors do not have a method or closure named "findById".' in F:\brandontechsailor\mapeer_dev\framework\base\CComponent.php:269
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\db\ar\CActiveRecord.php(214): CComponent->__call('findById', Array)
+#1 [internal function]: CActiveRecord->__call('findById', Array)
+#2 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\models\UserData.php(47): User->findById('user_id')
+#3 F:\brandontechsailor\mapeer_dev\framework\validators\CInlineValidator.php(39): UserData->user_exist('user_id', Array)
+#4 F:\brandontechsailor\mapeer_dev\framework\validators\CValidator.php(192): CInlineValidator->validateAttribute(Object(UserData), 'user_id')
+#5 F:\brandontechsailor\mapeer_dev\framework\base\CModel.php(152): CValidator->validate(Object(UserData), NULL)
+#6 F:\brandontechsailor\mapeer_dev\framework\db\ar\CActiveRecord.php(780): CModel->validate(NULL)
+#7 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(66): CActiveRecord->save()
+#8 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(50): FileUploadController->actionLike()
+#9 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#10 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#11 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('like')
+#13 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/like')
+#14 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#15 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#16 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+2012/06/01 11:03:51 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:328
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('like')
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/like')
+#5 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#7 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+2012/06/01 11:04:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:328
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('like')
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/like')
+#5 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#7 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+2012/06/01 11:05:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:328
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('like')
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/like')
+#5 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#7 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+2012/06/01 11:06:18 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:328
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('like')
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/like')
+#5 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#7 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+2012/06/01 11:06:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:328
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('like')
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/like')
+#5 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#7 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+2012/06/01 11:07:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:328
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('like')
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/like')
+#5 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#7 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+2012/06/01 11:08:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:328
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('like')
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/like')
+#5 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#7 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+2012/06/01 11:10:37 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:328
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('like')
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/like')
+#5 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#7 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+2012/06/01 11:11:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:328
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('like')
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/like')
+#5 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#7 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+2012/06/01 11:11:59 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:328
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('like')
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/like')
+#5 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#7 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+2012/06/01 11:12:32 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:328
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('like')
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/like')
+#5 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#7 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+2012/06/01 11:14:25 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:328
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('like')
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/like')
+#5 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#7 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+2012/06/01 11:16:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:328
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('like')
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/like')
+#5 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#7 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+2012/06/01 11:17:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in F:\brandontechsailor\mapeer_dev\framework\web\CController.php:328
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#2 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('like')
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/like')
+#5 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#6 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#7 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
+2012/06/01 11:27:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_user_data` (`id`, `user_id`, `data_type`, `data`, `created`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4).
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php (75)
+in F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php (15)
+2012/06/01 11:27:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `tbl_user_data` (`id`, `user_id`, `data_type`, `data`, `created`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4)' in F:\brandontechsailor\mapeer_dev\framework\db\CDbCommand.php:336
+Stack trace:
+#0 F:\brandontechsailor\mapeer_dev\framework\db\ar\CActiveRecord.php(1017): CDbCommand->execute()
+#1 F:\brandontechsailor\mapeer_dev\framework\db\ar\CActiveRecord.php(781): CActiveRecord->insert(NULL)
+#2 F:\brandontechsailor\mapeer_dev\demos\testdrive\protected\controllers\FileUploadController.php(75): CActiveRecord->save()
+#3 F:\brandontechsailor\mapeer_dev\framework\web\actions\CInlineAction.php(50): FileUploadController->actionLike()
+#4 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(300): CInlineAction->runWithParams(Array)
+#5 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(278): CController->runAction(Object(CInlineAction))
+#6 F:\brandontechsailor\mapeer_dev\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(277): CController->run('like')
+#8 F:\brandontechsailor\mapeer_dev\framework\web\CWebApplication.php(136): CWebApplication->runController('fileupload/like')
+#9 F:\brandontechsailor\mapeer_dev\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#10 F:\brandontechsailor\mapeer_dev\demos\testdrive\index.php(15): CApplication->run()
+#11 {main} REQUEST_URI=/mapeer_dev/demos/testdrive/index.php?r=fileupload/like
