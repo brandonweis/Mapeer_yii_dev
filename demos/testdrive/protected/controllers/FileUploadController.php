@@ -46,6 +46,7 @@ class FileUploadController extends Controller
 
 		d($like->data);
 
+		// if exisit in database append the like to existing json structure
 		if(!empty($like->data)){
 			$likeStr = json_decode($like->data);
 			
@@ -57,6 +58,7 @@ class FileUploadController extends Controller
 			
 		}
 		
+		// structure that make up the json structure
 		$temp->shot_id = $shot_id;
 		$temp->created_date = date(DATE_ATOM);
 		$likeStr[] = $temp;
@@ -65,6 +67,7 @@ class FileUploadController extends Controller
 		
 		$likeStr = json_encode($likeStr);
 
+		//saving the like json structure
 		$user_data->user_id = $user_id;
 		$user_data->data_type = "like";
 		$user_data->data = $likeStr;
